@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<img src="<?php echo PATH_RESOURCE_ADMIN; ?>img/icon/logo_white.png" style="width: 100%;" >
              
 		</div><!-- /.login-logo -->
-		<div class="login-box-body" style="background: #009b51">
+		<div class="login-box-body" style="background: #4c4c4c">
 			<p class="login-box-msg" style="color: #fff;">INICIAR SESION</p>
 			<form id="formLogin" name="formLogin" method="post">
 				<div class="form-group has-feedback">
