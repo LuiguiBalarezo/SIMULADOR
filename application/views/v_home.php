@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
     <![endif]-->
 </head>
-<body class="hold-transition login-page" style="background: #183972;">
+<body class="hold-transition login-page" style="background: #0c72b8;">
 	<!-- <body class="hold-transition" style="background: #4CAF50;"> -->
 	<div class="login-box">
 		<div class="login-logo">
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--						</div>-->
 					</div><!-- /.col -->
 					<div class="col-xs-4">
-						<button id="btnSignIn" type="submit" style="background: #183972" class="btn btn-primary btn-block btn-flat">Entrar</button>
+						<button id="btnSignIn" type="submit" style="background: #1e275e" class="btn btn-primary btn-block btn-flat">Entrar</button>
 					</div><!-- /.col -->
 				</div>
 				

@@ -16,7 +16,6 @@ class C_Home extends CI_Controller {
 		} else {
 			$this->load->view('v_home');
 		}
-
 	}
 	public function signIn() {
 		$this->load->helper('security');

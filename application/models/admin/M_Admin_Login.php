@@ -10,9 +10,7 @@ class M_Admin_Login extends CI_Model {
             Usuario.password,
             Usuario.email,
             Usuario.nombre,
-            Usuario.apellidos,
-            Usuario.id_tipo_usuario,
-            Tipo_usuario.nombre_tipo_usuario");
+            Usuario.apellidos");
         $this->db->join('Tipo_usuario', 'Tipo_usuario.id_tipo_usuario = Usuario.id_tipo_usuario');
         $this->db->where('Usuario.usuario', $user);
         $this->db->where('Usuario.estado', '1');

@@ -15,7 +15,7 @@ class C_Admin extends CI_Controller {
 	public function index()	{
         $this->load->model('admin/M_Admin_Usuario');
         $modulo                     = new stdClass();
-        $modulo->titulo_pagina      = "SERVOSA | Panel Principal";
+        $modulo->titulo_pagina      = "Simulador de Examenes | Panel Principal";
 
         $usuario                    = $this->M_Admin_Usuario->getByID($this->session->id_usuario);
         $modulo->datos_usuario      = $usuario[0];
