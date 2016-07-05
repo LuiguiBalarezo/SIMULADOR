@@ -71,10 +71,7 @@ class C_Home extends CI_Controller {
 			'nombres_usuario',
 			'apellidos_usuario',
 			'usuario',
-			'email_usuario',
-			'id_tipo_usuario',
-			'nombre_tipo_usuario'
-		);
+			'email_usuario' );
 		$this->session->unset_userdata($sessionUser);
 		$this->session->sess_destroy();
 		redirect('/');
