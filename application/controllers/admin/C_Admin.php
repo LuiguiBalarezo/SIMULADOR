@@ -22,7 +22,7 @@ class C_Admin extends CI_Controller {
         
         /* Datos de la cabecera del panel de administrador*/
         $modulo->nombres_usuario    = $usuario[0]->nombre." ".$usuario[0]->apellidos;
-        $modulo->tipo_usuario       = $usuario[0]->nombre_tipo_usuario;
+
 
         
         $data["modulo"] = $modulo;

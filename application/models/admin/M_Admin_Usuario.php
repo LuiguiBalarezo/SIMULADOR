@@ -14,20 +14,13 @@ class M_Admin_Usuario extends CI_Model {
 		$this->db->select("
        		Usuario.id_usuario,
             Usuario.email,
-            Usuario.fecha_registro,
             Usuario.nombre,
             Usuario.apellidos,
-            Usuario.usuario,
-            Region.id_region,
-            Region.nombre_region,
-            Tipo_usuario.id_tipo_usuario,
-            Tipo_usuario.nombre_tipo_usuario
+            Usuario.usuario
             ");
-		$this->db->join('Tipo_usuario', 'Tipo_usuario.id_tipo_usuario = Usuario.id_tipo_usuario');
-		$this->db->join('Region', 'Region.id_region = Usuario.id_region');		
-		$this->db->where('Usuario.estado', '1');
-		$this->db->where('Region.estado', '1');
-		$this->db->where('Tipo_usuario.estado', '1');
+
+		$this->db->where('Usuarios.estado', '1');
+
 		$this->db->limit($limit, $start);
 		$query = $this->db->get('Usuario');
 
@@ -42,11 +35,7 @@ class M_Admin_Usuario extends CI_Model {
 	}
 
 	public function getTotalUsuarios() {
-		$this->db->join('Tipo_usuario', 'Tipo_usuario.id_tipo_usuario = Usuario.id_tipo_usuario');
-		$this->db->join('Region', 'Region.id_region = Usuario.id_region');		
 		$this->db->where('Usuario.estado', '1');
-		$this->db->where('Region.estado', '1');
-		$this->db->where('Tipo_usuario.estado', '1');
 		$query = $this->db->get('Usuario');
 		return $query->num_rows();
 	}
@@ -68,23 +57,14 @@ class M_Admin_Usuario extends CI_Model {
        		Usuario.id_usuario,
        		Usuario.usuario,
             Usuario.email,
-            Usuario.fecha_registro,
             Usuario.nombre,
-            Usuario.apellidos,
-            Usuario.dni,
-            Usuario.celular,
-            Usuario.direccion,
-            Region.id_region,
-            Region.nombre_region,
-            Tipo_usuario.id_tipo_usuario,
-            Tipo_usuario.nombre_tipo_usuario
+            Usuario.apellidos
             ");
-		$this->db->join('Tipo_usuario', 'Tipo_usuario.id_tipo_usuario = Usuario.id_tipo_usuario');
-		$this->db->join('Region', 'Region.id_region = Usuario.id_region');
+
+
 		$this->db->where('Usuario.id_usuario', $id_usuario);
 		$this->db->where('Usuario.estado', '1');
-		$this->db->where('Region.estado', '1');
-		$this->db->where('Tipo_usuario.estado', '1');
+
 		$query = $this->db->get('Usuario');
         
 		return $query->result();
@@ -94,11 +74,6 @@ class M_Admin_Usuario extends CI_Model {
 		$data = array(
 			"nombre"			=> $data["nombre"],
 			"apellidos"			=> $data["apellidos"],
-			"dni"				=> $data["dni"],
-			"celular"			=> $data["celular"],
-			"direccion"			=> $data["direccion"],
-			"id_tipo_usuario"	=> $data["id_tipo_usuario"],
-			"id_region"			=> $data["id_region"],
 			"usuario"			=> $data["usuario"],
 			"email"				=> $data["email"],
 			"password"			=> $data["password"]
@@ -114,11 +89,6 @@ class M_Admin_Usuario extends CI_Model {
 		$data = array(
 			"nombre"			=> $data["nombre"],
 			"apellidos"			=> $data["apellidos"],
-			"dni"				=> $data["dni"],
-			"celular"			=> $data["celular"],
-			"direccion"			=> $data["direccion"],
-			"id_tipo_usuario"	=> $data["id_tipo_usuario"],
-			"id_region"			=> $data["id_region"],
 			"usuario"			=> $data["usuario"],
 			"email"				=> $data["email"],
 			"password"			=> $data["password"]
