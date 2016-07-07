@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
-	<script type='text/javascript' src="<?php echo base_url().PATH_RESOURCE_ADMIN; ?>js/loadingoverlay.js"></script>
+
     <![endif]-->
 </head>
 <body class="hold-transition login-page" style="background: #d2d6de;">

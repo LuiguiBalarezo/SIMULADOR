@@ -28,4 +28,4 @@
 <script src="<?php echo PATH_RESOURCE_ADMIN; ?>js/HandleFile.js"></script>
 <!-- Sweet Alert -->
 <script src="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/sweetalert2/1.3.2/sweetalert2.min.js"></script>-->
+<script type='text/javascript' src="<?php echo base_url().PATH_RESOURCE_ADMIN; ?>js/loadingoverlay.js"></script>
