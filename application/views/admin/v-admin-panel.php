@@ -29,8 +29,8 @@
       <div class="col-lg-4 col-xs-6">
         <div class="small-box bg-aqua">
           <div class="inner">
-            <p><h3><center>MODULO DE</center>
-              <center>ESTUDIO</center></h3></p>
+            <p><h4><center>MODULO DE</center>
+              <center>ESTUDIO</center></h4></p>
           </div>
 
           <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
@@ -40,8 +40,8 @@
       <div class="col-lg-4 col-xs-6">
         <div class="small-box bg-green">
           <div class="inner">
-            <center><h3>SIMULADOR<br>
-              100 PREGUNTAS</h3></center>
+            <center><h5>SIMULADOR<br/>
+              100 PREGUNTAS</h5></center>
           </div>
 
           <a href="panel/cienpreguntas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
