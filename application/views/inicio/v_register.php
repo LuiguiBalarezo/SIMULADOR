@@ -90,8 +90,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="CONTRASEÑA">
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
-							<div class="form-group has-feedback">
-								<label style="margin-top: 8px">FECHA DE REGISTRO 07/07/2016</label>
+							<div class="form-group has-feedback" style="margin-top: 8px; text-align: center">
+								<label>FECHA DE REGISTRO 07/07/2016</label>
 							</div>
 							<div class="checkbox icheck">
 								<label style="margin-top: 6px">
