@@ -17,6 +17,65 @@ class C_Home extends CI_Controller {
 			$this->load->view('v_home');
 		}
 	}
+	public function signIn() {
+		$this->load->helper('security');
+		$this->load->model('admin/M_Admin_Login');
+		$this->load->library('security/Cryptography');
+
+		$json 				= new stdClass();
+		$json->type 		= "Iniciar Sesion";
+		$json->presentation = "SignIn";
+		$json->data 		= array();
+		$json->status 		= FALSE;
+
+		if ($this->input->post("usuario") && $this->input->post("contrasenia_usuario")) {
+
+			$result = $this->M_Admin_Login->signIn(trim($this->input->post("usuario", TRUE)));
+			if (sizeof($result) > 0 ) {
+				$Usuario = $result[0];
+				if ($this->cryptography->validateHash($Usuario->password, trim($this->input->post("contrasenia_usuario", TRUE)))) {
+
+					$sessionUser = array(
+						'user_session'          => TRUE,
+						'id_usuario'            => intval($Usuario->id_usuario),
+						'nombres_usuario'       => $Usuario->nombre,
+						'apellidos_usuario'	    => $Usuario->apellidos,
+						'usuario'	    		=> $Usuario->usuario,
+						'email_usuario'		    => $Usuario->email
+					);
+
+					$json->data = array("url_redirect" => base_url()."admin");
+
+					$this->session->set_userdata($sessionUser);
+
+					$json->message = "Inicio de sesion existosa.";
+					$json->status 	= TRUE;
+				} else {
+					$json->message = "La contraseña del usuario es incorrecta.";
+				}
+			} else {
+				$json->message = "El Usuario no existe.";
+			}
+
+		} else {
+			$json->message 	= "No se recibio los parametros necesarios para procesar su solicitud.";
+		}
+
+		echo json_encode($json);
+	}
+
+	public function signOut() {
+		$sessionUser = array(
+			'user_session',
+			'id_usuario',
+			'nombres_usuario',
+			'apellidos_usuario',
+			'usuario',
+			'email_usuario' );
+		$this->session->unset_userdata($sessionUser);
+		$this->session->sess_destroy();
+		redirect('/');
+	}
 
 
 
