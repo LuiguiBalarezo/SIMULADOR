@@ -91,10 +91,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<label>FECHA DE REGISTRO 07/07/2016</label>
+								<label style="margin-top: 20px">FECHA DE REGISTRO 07/07/2016</label>
 							</div>
 							<div class="checkbox icheck">
-								<label>
+								<label style="margin-top: 5px">
 									<input type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
 								</label>
 							</div>
@@ -118,7 +118,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!---->
 <!--				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Inicia Sesion con Facebook</a>-->
 <!---->
-<!--			</div><!-- /.social-auth-links -->-->
+<!--			</div><!-- /.social-auth-links -->
 
 
 		</div><!-- /.login-box-body -->
