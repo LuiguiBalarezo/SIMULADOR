@@ -50,21 +50,22 @@
         </a>
       </div><!-- /.col -->
 
-      <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="panel/completo">
-            <div class="info-box">
-              <span class="info-box-icon bg-yellow"><i class="fa fa-user"></i></span>
-              <div class="info-box-content bg-yellow">
-                <span class="info-box-text">SIMULADOR COMPLETO</span>
-                <span class="info-box-number">more info</span>
-              </div><!-- /.info-box-content -->
-            </div><!-- /.info-box -->
-          </a>
-      </div><!-- /.col -->
-      
 
 
+      <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-yellow-gradient">
+          <div class="inner">
+            <span class="info-box-text">SIMULADOR COMPLETO</span>
+          </div>
+          <div class="icon">
 
+          </div>
+          <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-red">
           <div class="inner">
             <h3>65 dias</h3>
@@ -75,6 +76,7 @@
 
           </div>
           <a href="panel/licencia" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
         </div>
 
 
