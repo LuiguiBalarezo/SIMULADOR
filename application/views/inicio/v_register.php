@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<form id="Form"  method="post">
 				<div class="row">
 
-						<div class="col-xs-6">
+						<div class="col-md-6 col-xs-12">
 							<div class="form-group has-feedback">
 								<input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="NOMBRES">
 								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-md-6 col-xs-12">
 							<div class="form-group has-feedback">
 								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="DNI">
 								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
