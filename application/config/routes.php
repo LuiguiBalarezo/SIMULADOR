@@ -59,6 +59,8 @@ $route['translate_uri_dashes'] = FALSE;
 | ------------------------------
 */
 $route['home']					= 'C_Home';
+$route['login']				    = 'C_Home/login';
+$route['register']				= 'C_Home/register';
 $route['signIn']				= 'C_Home/signIn';
 
 

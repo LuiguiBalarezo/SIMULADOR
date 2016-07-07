@@ -91,6 +91,6 @@ define('PATH_RESOURCE_BOOTSTRAP', 	'resources/bootstrap/');
 define('PATH_RESOURCE_DIST', 		'resources/dist/');
 define('PATH_RESOURCE_PLUGINS', 	'resources/plugins/');
 define('PATH_RESOURCE_ADMIN', 		'resources/admin/');
-define('PATH_RESOURCE_STORE', 		'resources/store/');
+define('PATH_RESOURCE_MAIN', 		'resources/main/');
 
 /* <--------------------> END <-------------------> */

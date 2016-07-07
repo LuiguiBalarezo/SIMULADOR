@@ -1,0 +1,193 @@
+@media screen and (min-width: 960px){
+	.m_base_menu{
+		display none !important;
+	}
+	.body-overflow{
+		overflow-y auto !important
+	}
+	#header{
+		position: static;
+		div.view_menu{
+			display none
+		}
+		nav{
+			position: absolute;
+			right: 10% !important;
+			width: 78.2%;
+			top: 87.5% !important;
+			background: #4b4b4b;
+
+			ul{
+				li{
+					border-right: 1px solid #2e2e30;
+					&#border-none{
+						border-right:0;
+					}
+					a{
+						border-bottom: 0;
+						font-size: 12px;
+						padding: 20px 29px !important;
+						line-height: 30px;
+						width: auto;
+						&:hover{
+							background: #0f72b8;
+						}
+						p{
+							display none
+						}
+						figure{
+							display: block;
+							img{
+								width: 25px;
+								
+							}
+						}
+					}
+
+				}
+			}
+			&.m_visible{
+				right: 0;
+			}
+		}
+	}
+	#inicio{
+		div.logo{
+			top: 140px !important;
+			width: 600px !important;
+			left: calc(45% - 225px) !important;
+		}
+		section.portada{
+			.fluid_container {
+				height: 650px;
+			}
+			#camera_wrap_4{
+				div.camera_caption{
+					padding: 40px 25% 175px 25%;
+					div{
+						h1{
+							font-size: 40px;
+						}
+						p{
+							font-size: 22px;
+						}
+					}
+				}
+				.camera_pag{
+					bottom: 75px;
+				}
+			}
+		}		
+	}
+	#nosotros{
+		section.content{
+			bottom: 12px !important;
+			max-width none
+			width 100%
+			margin 0 auto
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			article{
+				vertical-align middle
+				div.icons-help-service{
+					div.content-service{
+						display: inline-block;
+						margin: 15px;
+						div.icon{
+							img{
+								width: 80px;
+							}
+						}
+					}
+				}
+			}
+		}
+		section.list_content{
+			article{
+				figure{
+					width 35%
+				}
+				div.descripcion{
+					width 62%
+				}
+			}
+		}
+	}
+	#entidades{
+		height auto
+	}
+	#contactenos{
+		background-size: cover;
+		padding 0
+		article.content-top{
+			h1{
+				font-size: 32px;
+				padding-top: 16px;
+			}
+			article.form{
+				div.servicio-tecnico{
+					float: left;
+					margin: 100px 0px;
+					#pop2{
+						.popup{
+							width: 40%;
+							h2{
+								font-size: 29px;
+							}
+							.content{
+								form{
+									div.inp{
+										margin: 10px 0;
+										input, textarea{
+											width: 100%;
+											
+										}
+										textarea{}
+										height: 140px;
+									}
+								}
+							}
+						}
+					}
+				}
+				div.form{
+					div.inp{
+						input{
+							width: 545px;
+							height: 40px;
+						}
+						textarea{
+							width: 545px;
+						}
+						button{
+							width: 545px;
+						}
+						
+						.hvr-sweep-to-right{
+							width: 541px;
+							height: 60px;
+							padding: 20px;
+							color: #fff;
+							font-size: 20px;
+						}
+
+					}
+				}
+			}
+		}
+		
+		article.bottom {
+			footer {
+				ul{
+					li{
+						margin: 25px 0 !important;
+					}
+					li.separador{
+						display inline-block
+					}
+				}
+			}
+		}
+	}
+}

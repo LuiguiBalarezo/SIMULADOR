@@ -1,0 +1,132 @@
+/*
+Theme Name: Ghost Theme 
+Theme URI: http://www.renklibeyaz.com/ghostwp/
+Description: Full screen and background Image and Video with Audio
+Author: RenkliBeyaz - Salih Ozovali
+Version: 1.2.0
+
+Tags: Default
+
+License:
+License URI:
+
+You can add your custom styles to this css file. Ghost Theme uses style.php file for dynamic styles.
+
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.sticky { background: rgba(255,255,255,0.1);}
+#topRight,#bottomleft{
+    z-index: 30;
+}
+#topRight{
+    top:5px;
+}
+#topRight .tlCtrl{
+    margin-bottom: 5px;
+}
+.btnCtrl.prevBG{
+    left:  60px
+}
+.btnCtrl.nextBG{
+    right: 60px
+}
+.btnCtrl.prevBG, .btnCtrl.nextBG{
+    background-image: none;
+    width: 65px;
+    height: 65px;
+}
+.btnCtrl.prevBG img,.btnCtrl.nextBG img{
+    width: 50px;
+    margin-top: 8px;
+}
+.mBL:hover, .mBL:active, .btnCtrl.prevBG:hover, .btnCtrl.nextBG:hover{
+    background-color: rgba(255,0,0, 0.25);
+}
+.tlCtrl:hover, .tlCtrl:active {
+background-color: rgba(255,0,0, 0.25);
+}
+#topRight {
+    top: 25px;
+}
