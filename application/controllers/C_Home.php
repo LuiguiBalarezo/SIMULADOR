@@ -43,9 +43,7 @@ class C_Home extends CI_Controller {
 						'nombres_usuario'       => $Usuario->nombre,
 						'apellidos_usuario'	    => $Usuario->apellidos,
 						'usuario'	    		=> $Usuario->usuario,
-						'email_usuario'		    => $Usuario->email,
-						'id_tipo_usuario'		=> $Usuario->id_tipo_usuario,
-						'nombre_tipo_usuario'	=> $Usuario->nombre_tipo_usuario,
+						'email_usuario'		    => $Usuario->email
 					);
 
 					$json->data = array("url_redirect" => base_url()."panel");
