@@ -32,10 +32,10 @@ class C_Home extends CI_Controller {
 
 		if ($this->input->post("txtEmail") && $this->input->post("txtPassword")) {
 
-			$result = $this->M_Admin_Login->signIn(trim($this->input->post("email", TRUE)));
+			$result = $this->M_Admin_Login->signIn(trim($this->input->post("txtEmail", TRUE)));
 			if (sizeof($result) > 0 ) {
 				$Usuario = $result[0];
-				if ($this->cryptography->validateHash($Usuario->password, trim($this->input->post("password", TRUE)))) {
+				if ($this->cryptography->validateHash($Usuario->password, trim($this->input->post("txtPassword", TRUE)))) {
 
 					$sessionUser = array(
 						'user_session'          => TRUE,
