@@ -114,11 +114,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			</form>
 
-			<div class="social-auth-links text-center">
-
-				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Inicia Sesion con Facebook</a>
-
-			</div><!-- /.social-auth-links -->
+<!--			<div class="social-auth-links text-center">-->
+<!---->
+<!--				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Inicia Sesion con Facebook</a>-->
+<!---->
+<!--			</div><!-- /.social-auth-links -->-->
 
 
 		</div><!-- /.login-box-body -->
