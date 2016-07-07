@@ -131,39 +131,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script>
             
         $(function () {
-				$("#btnSignIn").on("click", function(evt){
-					evt.preventDefault();
-					//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
-					if ( $("#txtEmail").val().length > 0 && $("#txtPassword").val().length > 0 ) {
-						$.LoadingOverlay("show");
-						var request = $.ajax({
-							url: "<?php echo base_url().'signIn'; ?>",
-							type: "post",
-							data: $("#Form").serialize(),
-							dataType: 'json'
-						});
+			$("#btnSignIn").on("click", function(evt){
+				evt.preventDefault();
+				//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
+				if ( $("#txtEmail").val().length > 0 && $("#txtPassword").val().length > 0 ) {
+					$.LoadingOverlay("show");
+					var request = $.ajax({
+						url: "<?php echo base_url().'signIn'; ?>",
+						type: "post",
+						data: $("#Form").serialize(),
+						dataType: 'json'
+					});
 
-						request.done(function( response ) {
-							$.LoadingOverlay("hide");
-							if (response.status) {
-								$(location).attr("href", response.data.url_redirect);
-							} else {
-								swal("Error", response.message, "error");
-								
-							}
-						});
+					request.done(function( response ) {
+						$.LoadingOverlay("hide");
+						if (response.status) {
+							$(location).attr("href", response.data.url_redirect);
+						} else {
+							swal("Error", response.message, "error");
 
-						request.fail(function( jqXHR, textStatus ) {
-							$.LoadingOverlay("hide");
-							swal("Error", textStatus, "error");
-							
-						});
-					} else {
+						}
+					});
 
-						swal("Error", "Ingrese sus datos de usuario correctamente.", "error");
-						
-					}
-				});
+					request.fail(function( jqXHR, textStatus ) {
+						$.LoadingOverlay("hide");
+						swal("Error", textStatus, "error");
+
+					});
+				} else {
+
+					swal("Error", "Ingrese sus datos de usuario correctamente.", "error");
+
+				}
+			});
+			$('input').iCheck({
+				checkboxClass: 'icheckbox_square-blue',
+				radioClass: 'iradio_square-blue',
+				increaseArea: '20%' // optional
+			});
 				
 
 		});
