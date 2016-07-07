@@ -3192,7 +3192,7 @@ table.text-center th {
 
 .register-box {
   width: 700px;
-  margin: 2% auto;
+  margin: 7% auto;
 }
 @media (max-width: 768px) {
   .login-box,
