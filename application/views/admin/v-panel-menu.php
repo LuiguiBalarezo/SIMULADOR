@@ -4,10 +4,10 @@
 	<section class="sidebar">
 		<!-- Sidebar Menu -->
 		<ul class="sidebar-menu">
-			<li class="header">MENU</li>
+			<li class="header">MAIN NAVIGATION</li>
 			<li <?php echo ($menu == 1) ? 'class="active"' : ''; ?>>
 	          <a href="panel/perfil">
-	            <i class="fa fa-user"></i> <span>EDITAR MI PERFIL</span> <i class="fa fa-angle-left pull-right"></i>
+	            <i class="fa fa-user"> </i> <span> EDITAR MI PERFIL </span> <i class="fa fa-angle-left pull-right"></i>
 	          </a>
 
 	        </li>
@@ -17,39 +17,39 @@
 	          </a>
 
 	        </li>
-			<li <?php echo ($menu == 2) ? 'class="active"' : ''; ?>>
+			<li <?php echo ($menu == 3) ? 'class="active"' : ''; ?>>
 				<a href="panel/cienpreguntas">
 					<i class="fa fa-dashboard"></i> <span>SIMULADOR DE 100 PREGUNTAS</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>
 
 			</li>
 
-			<li <?php echo ($menu == 2) ? 'class="active"' : ''; ?>>
+			<li <?php echo ($menu == 4) ? 'class="active"' : ''; ?>>
 				<a href="panel/completo">
 					<i class="fa fa-dashboard"></i> <span>SIMULADOR DE EXAMEN (COMPLETO)</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>
 
 			</li>
-			<li <?php echo ($menu == 2) ? 'class="active"' : ''; ?>>
+			<li <?php echo ($menu == 5) ? 'class="active"' : ''; ?>>
 				<a href="panel/bibliografia">
 					<i class="fa fa-dashboard"></i> <span>BIBLIOGRAFIA</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>
 
 			</li>
-			<li <?php echo ($menu == 2) ? 'class="active"' : ''; ?>>
+			<li <?php echo ($menu == 6) ? 'class="active"' : ''; ?> >
 				<a href="panel/manual">
 					<i class="fa fa-dashboard"></i> <span>MANUAL DE USO</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>
 
 			</li>
-			<li <?php echo ($menu == 2) ? 'class="active"' : ''; ?>>
+			<li <?php echo ($menu == 7) ? 'class="active"' : ''; ?>>
 				<a href="panel/soporte">
 					<i class="fa fa-dashboard"></i> <span>SOPORTE TECNICO (AYUDA)</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>
 
 			</li>
 
-			<li <?php echo ($menu == 7) ? 'class="active"' : ''; ?>>
+			<li <?php echo ($menu == 8) ? 'class="active"' : ''; ?>>
 				<a href="panel/licencia">
 					<i class="fa fa-floppy-o"></i> <span>COMPRAR O RENOVAR LICENCIA</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>

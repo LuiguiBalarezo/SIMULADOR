@@ -25,70 +25,61 @@
     </section>
     <!-- Main content -->
     <section class="content">
+
       <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="admin/usuario">
+        <a class="link-shorcut" href="panel/estudio">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-floppy-o"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">MODULO DE ESTUDIO</span>
+              <span class="info-box-number">more info</span>
+            </div><!-- /.info-box-content -->
+          </div><!-- /.info-box -->
+        </a>
+      </div><!-- /.col -->
+
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <a class="link-shorcut" href="panel/cienpreguntas">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-dashboard"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">SIMULADOR DE 100 PREGUNTAS</span>
+              <span class="info-box-number">more info</span>
+            </div><!-- /.info-box-content -->
+          </div><!-- /.info-box -->
+        </a>
+      </div><!-- /.col -->
+
+      <div class="col-md-3 col-sm-6 col-xs-12">
+          <a class="link-shorcut" href="panel/completo">
             <div class="info-box">
               <span class="info-box-icon bg-yellow"><i class="fa fa-user"></i></span>
               <div class="info-box-content">
-                <span class="info-box-text">USUARIOS</span>
-                <span class="info-box-number"></span>
+                <span class="info-box-text">SIMULADOR COMPLETO</span>
+                <span class="info-box-number">more info</span>
               </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
           </a>
       </div><!-- /.col -->
       
+
+
         <div class="col-md-3 col-sm-6 col-xs-12">
           <a class="link-shorcut" href="">
             <div class="info-box">
-              <span class="info-box-icon bg-green"><i class="fa fa-dashboard"></i></span>
+              <span class="info-box-icon bg-red"><i class="fa fa-bar-chart"></i></span>
               <div class="info-box-content">
-                <span class="info-box-text">OPERACIONES</span>
-                <span class="info-box-number"></span>
+                <span class="info-box-text">65</span>
+                <span class="info-box-text">para caducar tu licencia</span>
+                <span class="info-box-number">more info</span>
               </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
           </a>
         </div><!-- /.col -->
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="">
-            <div class="info-box">
-              <span class="info-box-icon bg-blue"><i class="fa fa-bar-chart"></i></span>
-              <div class="info-box-content">
-                <span class="info-box-text">GRAFICOS</span>
-                <span class="info-box-text">ESTADISTICOS</span>
-                <span class="info-box-number"></span>
-              </div><!-- /.info-box-content -->
-            </div><!-- /.info-box -->
-          </a>
-        </div><!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <a class="link-shorcut" href="">
-          <div class="info-box">
-            <span class="info-box-icon bg-olive"><i class="fa fa-exclamation-triangle"></i></span>
-            <div class="info-box-content">
-              <span class="info-box-text">EVENTOS DE</span>
-              <span class="info-box-text">RIESGO</span>
-              <span class="info-box-number"></span>
-            </div><!-- /.info-box-content -->
-          </div><!-- /.info-box -->
-        </a>
-      </div><!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <a class="link-shorcut" href="admin/backup">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="fa fa-floppy-o"></i></span>
-            <div class="info-box-content">
-              <span class="info-box-text">BACKUP</span>
-              <span class="info-box-number"></span>
-            </div><!-- /.info-box-content -->
-          </div><!-- /.info-box -->
-        </a>
-      </div><!-- /.col -->
-
 
         
-        
-      </div><!-- /.row -->
+      <!--</div><!-- /.row -->
 
       <!-- =========================================================== -->
 
