@@ -1,6 +1,6 @@
 <?php
 //require_once('facebook.php');
-include(APPPATH.'libraries/redes/facebook/facebook.php');
+include(APPPATH.'libraries/facebook/facebook.php');
 class Facebook_lib extends Facebook{
 
    public $user = null;
