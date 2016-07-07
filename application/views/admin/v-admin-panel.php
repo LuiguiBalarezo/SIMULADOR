@@ -16,8 +16,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Panel Administrativo
-        <small>Enlaces rapidos</small>
+        SIMULADOR DE EXAMENES - BANCO DE PREGUNTAS 2016 <br>
+        <small>Elija una opcion de simulador disponible segun su plan</small>
       </h1>
       <ol class="breadcrumb">
         <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
