@@ -38,7 +38,7 @@
         </div><!-- /.col -->
       
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="admin/operacion">
+          <a class="link-shorcut" href="">
             <div class="info-box">
               <span class="info-box-icon bg-green"><i class="fa fa-dashboard"></i></span>
               <div class="info-box-content">
@@ -50,7 +50,7 @@
         </div><!-- /.col -->
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="admin/evento">
+          <a class="link-shorcut" href="">
             <div class="info-box">
               <span class="info-box-icon bg-blue"><i class="fa fa-bar-chart"></i></span>
               <div class="info-box-content">
@@ -62,7 +62,7 @@
           </a>
         </div><!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <a class="link-shorcut" href="admin/eventoriesgos">
+        <a class="link-shorcut" href="">
           <div class="info-box">
             <span class="info-box-icon bg-olive"><i class="fa fa-exclamation-triangle"></i></span>
             <div class="info-box-content">
