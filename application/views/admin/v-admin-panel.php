@@ -30,7 +30,7 @@
         <a class="link-shorcut" href="panel/estudio">
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-floppy-o"></i></span>
-            <div class="info-box-content">
+            <div class="info-box-content bg-aqua-active">
               <span class="info-box-text">MODULO DE ESTUDIO</span>
               <span class="info-box-number">more info</span>
             </div><!-- /.info-box-content -->
@@ -42,7 +42,7 @@
         <a class="link-shorcut" href="panel/cienpreguntas">
           <div class="info-box">
             <span class="info-box-icon bg-green"><i class="fa fa-dashboard"></i></span>
-            <div class="info-box-content">
+            <div class="info-box-content bg-green-gradient">
               <span class="info-box-text">SIMULADOR DE 100 PREGUNTAS</span>
               <span class="info-box-number">more info</span>
             </div><!-- /.info-box-content -->
@@ -54,7 +54,7 @@
           <a class="link-shorcut" href="panel/completo">
             <div class="info-box">
               <span class="info-box-icon bg-yellow"><i class="fa fa-user"></i></span>
-              <div class="info-box-content">
+              <div class="info-box-content bg-yellow">
                 <span class="info-box-text">SIMULADOR COMPLETO</span>
                 <span class="info-box-number">more info</span>
               </div><!-- /.info-box-content -->
