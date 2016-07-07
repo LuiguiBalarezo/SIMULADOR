@@ -63,6 +63,13 @@ $route['login']				    = 'C_Home/login';
 $route['register']				= 'C_Home/register';
 $route['signIn']				= 'C_Home/signIn';
 
+/*
+| ------------------------------
+| URL -> RED SOCIAL FACEBOOK
+| ------------------------------
+*/
+
+$route['facebook']				= 'C_Home/facebook';
 
 /*
 | ------------------------------

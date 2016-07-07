@@ -28,6 +28,42 @@ class C_Home extends CI_Controller {
 
 	}
 
+	public function facebook() {
+
+		$this->load->library('facebook/Facebook_lib');
+		$data = array(
+			'redirect_uri' => site_url('handlefacebook'),
+			'scope' => 'public_profile,email'
+		);
+		redirect($this->facebook_lib->getLoginUrl($data));
+
+	}
+
+	public function handle_facebook_login(){
+		$this->load->library('facebook/Facebook_lib');
+		$facebook_user = $this->facebook_lib->user;
+		if($facebook_user){
+
+			if(isset($facebook_user['email']) && $facebook_user['email'] ){
+				$resultado_cliente = $this->M_Intranet_Cliente->has_account($facebook_user['email']);
+				if(count($resultado_cliente) == 1 && $resultado_cliente[0]->estado == '1'){
+					$cliente = $resultado_cliente[0];
+					$this->log_in($cliente->idCliente, $cliente->nombre_cliente, $cliente->apellido_cliente, $cliente->email_cliente);
+					redirect('perfilc');
+				}else{
+//					$idCliente = $this->M_Intranet_Cliente->sign_up_from_facebook($facebook_user);
+//					$this->log_in($idCliente, $facebook_user['first_name'],$facebook_user['last_name'],$facebook_user['email'] );
+					redirect('register');
+				}
+			}
+
+		}else{
+			echo "No se pudo loguear";
+		}
+
+	}
+
+
 
 	public function signIn() {
 		$this->load->helper('security');
