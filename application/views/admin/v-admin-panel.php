@@ -67,11 +67,12 @@
         <div class="col-md-3 col-sm-6 col-xs-12">
           <a class="link-shorcut" href="panel/licencia">
             <div class="box box-primary box-solid">
-              <span class="info-box-icon bg-red"><i class="fa fa-bar-chart">65</i></span>
+              <span class="info-box-number">65</span>
               <div class="info-box-content bg-red">
-                <span class="info-box-text">para caducar tu licencia</span>
+                <span class="info-box-text">Para caducar tu licencia</span>
+                <span class="info-box-text"></span>
                 <span class="info-box-text">RENUEVALA AHORA</span>
-                <span class="info-box-number">more info</span>
+                <span class="info-box-text">more info</span>
               </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
           </a>
