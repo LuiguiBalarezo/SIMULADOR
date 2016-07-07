@@ -30,10 +30,8 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-aqua">
           <div class="inner">
-            <p><center><h4>MODULO DE
-              ESTUDIO</h4></center></p>
-
-
+            <p><h4><center>MODULO DE</center>
+              <center>ESTUDIO</center></h4>p
           </div>
 
           <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
