@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
-	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/all.css">
+	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/square/blue.css">
 
     <![endif]-->
 </head>
@@ -90,10 +90,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="CONTRASEÑA">
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
-							<div class="form-group has-feedback">
-								<label>
-									<input type="checkbox" class="minimal"> I agree
-								</label>
+							<div class="form-group ">
+								<div class="checkbox icheck">
+									<label>
+										<input type="checkbox"> Remember Me
+									</label>
+								</div>
 							</div>
 						</div>
 
