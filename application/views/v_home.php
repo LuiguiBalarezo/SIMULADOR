@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              
 		</div><!-- /.login-logo -->
 		<div class="login-box-body">
-			<p class="login-box-msg">Sign in to start your session</p>
+			<p class="login-box-msg">INICIAR SESION</p>
 			<form action="../../index2.html" method="post">
 				<div class="form-group has-feedback">
 					<input type="email" class="form-control" placeholder="Email">
@@ -58,19 +58,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div><!-- /.col -->
 					<div class="col-xs-4">
-						<button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+						<button type="submit" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
 					</div><!-- /.col -->
 				</div>
 			</form>
 
 			<div class="social-auth-links text-center">
 				<p>- OR -</p>
-				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
+				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Inicia Sesion con Facebook</a>
 
 			</div><!-- /.social-auth-links -->
 
-			<a href="#">I forgot my password</a><br>
-			<a href="register.html" class="text-center">Register a new membership</a>
+			<a href="#">Olvide mi Contraseña</a><br>
+			<a href="register.html" class="text-center">Registrate como miembro</a>
 
 		</div><!-- /.login-box-body -->
 
