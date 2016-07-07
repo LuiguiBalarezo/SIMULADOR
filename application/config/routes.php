@@ -171,6 +171,7 @@ $route['admin/tramos/delete']    	            = 'admin/C_Tramo/eliminar';
 | URL -> EVENTO RIESGO
 | ------------------------------
 */
+/*
 $route['admin/eventoriesgo']			        = 'admin/C_EventoRiesgo';
 $route['admin/eventoriesgo/page']               = 'admin/C_EventoRiesgo';
 $route['admin/eventoriesgo/page/(:num)']        = 'admin/C_EventoRiesgo';
@@ -181,23 +182,24 @@ $route['getPlacas']    	                        = 'admin/C_EventoRiesgo/getPlaca
 $route['getTramos']    	                        = 'admin/C_EventoRiesgo/getTramos';
 $route['getCategorias']    	                    = 'admin/C_EventoRiesgo/getCategorias';
 $route['getTipos']    	                        = 'admin/C_EventoRiesgo/getTipos';
-
+*/
 /*
 | ------------------------------
 | URL -> EVENTO RIESGO ADMIN
 | ------------------------------
 */
+/*
 $route['admin/eventoriesgos']			    = 'admin/C_ListadoEventos/all';
 $route['admin/eventoriesgos/page']			= 'admin/C_ListadoEventos/all';
 $route['admin/eventoriesgos/page/(:num)']	= 'admin/C_ListadoEventos/all';
 $route['admin/eventoriesgos/delete']		= 'admin/C_ListadoEventos/eliminar';
-
+*/
 /*
 | ------------------------------
 | URL -> EVENTO
 | ------------------------------
 */
-
+/*
 $route['admin/evento']			                = 'admin/C_Evento';
 $route['admin/evento/page']                     = 'admin/C_Evento';
 $route['admin/evento/page/(:num)']              = 'admin/C_Evento';
@@ -207,6 +209,7 @@ $route['admin/evento/(:num)']    	            = 'admin/C_Evento/editar/$1';
 $route['admin/evento/editar']    	            = 'admin/C_Evento/actualizar';
 $route['admin/evento/delete']    	            = 'admin/C_Evento/eliminar';
 $route['admin/evento/generatecodigo']           = 'admin/C_Evento/ajaxGenerateCodigo';
+*/
 /*
 | ------------------------------
 | URL -> CATEGORIA
