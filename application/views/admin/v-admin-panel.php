@@ -31,7 +31,7 @@
         <div class="small-box bg-aqua">
           <div class="inner">
             <p><h4><center>MODULO DE</center>
-              <center>ESTUDIO</center></h4>p
+              <center>ESTUDIO</center></h4></p>
           </div>
 
           <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
