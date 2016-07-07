@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
     <![endif]-->
 </head>
-<body class="hold-transition login-page" style="background: #183972;">
+<body class="hold-transition login-page" style="background: #d2d6de;">
 	<!-- <body class="hold-transition" style="background: #4CAF50;"> -->
 	<div class="login-box">
 		<div class="login-logo">
@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="social-auth-links text-center">
 				<p>- OR -</p>
 				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
-				<a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
+
 			</div><!-- /.social-auth-links -->
 
 			<a href="#">I forgot my password</a><br>
