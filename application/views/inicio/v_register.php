@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Simulador de Ex&aacute;menes</title>
+	<title>Register | Simulador de Ex&aacute;menes</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	
@@ -44,24 +44,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="login-box-body">
 			<p class="login-box-msg">INICIAR SESION</p>
 			<form id="Form"  method="post">
-				<div class="form-group has-feedback">
-					<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
-					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-				</div>
-				<div class="form-group has-feedback">
-					<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="Password">
-					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
-				</div>
 				<div class="row">
-					<div class="col-xs-8">
-						<div class="checkbox icheck">
-
+					<div class="col-xs-12">
+						<div class="col-xs-6">
+							<div class="form-group has-feedback">
+								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
+								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="Password">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
 						</div>
-					</div><!-- /.col -->
-					<div class="col-xs-4">
-						<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
-					</div><!-- /.col -->
+						<div class="col-xs-6">
+							<div class="row">
+								<div class="col-xs-8">
+									<div class="checkbox icheck">
+
+									</div>
+								</div><!-- /.col -->
+								<div class="col-xs-4">
+									<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+								</div><!-- /.col -->
+							</div>
+						</div>
+					</div>
 				</div>
+
+
 			</form>
 
 			<div class="social-auth-links text-center">

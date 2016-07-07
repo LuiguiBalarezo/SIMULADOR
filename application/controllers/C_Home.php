@@ -12,19 +12,19 @@ class C_Home extends CI_Controller {
 
 	public function index() {
 
-		$this->load->view('panel/v_start');
+		$this->load->view('inicio/v_start');
 
 	}
 
 	public function login() {
 
-		$this->load->view('panel/v_login');
+		$this->load->view('inicio/v_login');
 
 	}
 
 	public function register() {
 
-		$this->load->view('panel/v_home');
+		$this->load->view('inicio/v_home');
 
 	}
 
@@ -63,6 +63,16 @@ class C_Home extends CI_Controller {
 
 	}
 
+	public function log_in($idCliente, $nombre, $apellido, $email){
+		$sessionUser = array(
+			'user_session'          => TRUE,
+			'idCliente'             => $idCliente,
+			'nombre_cliente'        => $nombre,
+			'apellido_cliente'	    => $apellido,
+			'email_cliente'	    	=> $email
+		);
+		$this->session->set_userdata($sessionUser);
+	}
 
 
 	public function signIn() {
