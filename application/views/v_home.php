@@ -45,11 +45,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p class="login-box-msg">INICIAR SESION</p>
 			<form action="../../index2.html" method="post">
 				<div class="form-group has-feedback">
-					<input type="email" class="form-control" placeholder="Email">
+					<input type="email" name="email" id="email" class="form-control" placeholder="Email">
 					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
-					<input type="password" class="form-control" placeholder="Password">
+					<input type="password" name="password" id="password" class="form-control" placeholder="Password">
 					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">
@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div><!-- /.col -->
 					<div class="col-xs-4">
-						<button type="submit" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+						<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
 					</div><!-- /.col -->
 				</div>
 			</form>
@@ -84,8 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$("#btnSignIn").on("click", function(evt){
 					evt.preventDefault();
 					//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
-					if ( $("#usuario").val().length > 0 && $("#contrasenia_usuario").val().length > 0 ) {
-
+					if ( $("#email").val().length > 0 && $("#password").val().length > 0 ) {
+						$.LoadingOverlay("show");
 						var request = $.ajax({
 							url: "<?php echo base_url().'admin/signIn'; ?>",
 							method: "POST",
@@ -94,7 +94,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						});
 
 						request.done(function( response ) {
-
+							$.LoadingOverlay("hide");
 							if (response.status) {
 								$(location).attr("href", response.data.url_redirect);
 							} else {
@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						});
 
 						request.fail(function( jqXHR, textStatus ) {
-
+							$.LoadingOverlay("hide");
 							swal("Error", textStatus, "error");
 							
 						});
