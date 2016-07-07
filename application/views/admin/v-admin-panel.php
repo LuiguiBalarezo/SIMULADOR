@@ -68,7 +68,7 @@
           <a class="link-shorcut" href="panel/licencia">
             <div class="box box-primary box-solid">
               <span class="info-box-icon bg-red"><i class="fa fa-bar-chart">65</i></span>
-              <div class="info-box-content">
+              <div class="info-box-content bg-red">
                 <span class="info-box-text">para caducar tu licencia</span>
                 <span class="info-box-text">RENUEVALA AHORA</span>
                 <span class="info-box-number">more info</span>
@@ -77,21 +77,7 @@
           </a>
         </div><!-- /.col -->
 
-      <div class="info-box bg-red">
 
-        <div class="info-box-content">
-          <span class="info-box-text">65</span>
-          <span class="info-box-number">para caducar tu licencia</span>
-          <!-- The progress section is optional -->
-          <div class="progress">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
-            <span class="progress-description">
-              RENUEVALA AHORA
-              <litle>more info</litle>
-            </span>
-        </div><!-- /.info-box-content -->
-      </div><!-- /.info-box -->
 
         
       <!--</div><!-- /.row -->
