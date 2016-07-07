@@ -1,5 +1,5 @@
 <?php $this->load->view('template/main-panel/main-head', $modulo); ?>
-<body class="hold-transition skin-black sidebar-mini fix-padding-scrollbar">
+<body class="hold-transition bg-gray-light sidebar-mini fix-padding-scrollbar">
 <div class="wrapper">
 
   <?php
@@ -26,59 +26,63 @@
     <!-- Main content -->
     <section class="content">
       <div class="row">
-      <div class="col-lg-4 col-xs-6">
-        <div class="small-box bg-aqua">
-          <div class="inner">
-            <p><h4>MODULO DE <br/>
-              ESTUDIO</h4></p>
+        <div class="col-lg-4 col-xs-6">
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <p><h4>MODULO DE <br/>
+                ESTUDIO</h4></p>
+            </div>
+
+            <a href="panel/c" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-
-          <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-      </div>
+        <div class="col-lg-4 col-xs-6" ></div>
 
-      <div class="col-lg-4 col-xs-6">
-        <div class="small-box bg-green">
-          <div class="inner">
-            <h4>SIMULADOR<br/>
-              100 PREGUNTAS</h4>
+        <div class="col-lg-4 col-xs-6">
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h4>SIMULADOR<br/>
+                100 PREGUNTAS</h4>
+            </div>
+
+            <a href="panel/cienpreguntas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-
-          <a href="panel/cienpreguntas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-      </div>
+        <div class="col-lg-4 col-xs-6" ></div>
 
 
-      <div class="col-lg-4 col-xs-6">
-        <div class="small-box bg-yellow">
-          <div class="inner">
-            <h4>SIMULADOR<br/>
-              COMPLETO</h4>
+        <div class="col-lg-4 col-xs-6">
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h4>SIMULADOR<br/>
+                COMPLETO</h4>
+            </div>
+
+            <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-
-          <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-      </div>
+        <div class="col-lg-4 col-xs-6" ></div>
+
       </div>
       <div class="row">
         <div class="col-lg-4 col-xs-6" ></div>
-      <div class="col-lg-4 col-xs-6" >
-        <div class="small-box bg-red">
-          <div class="inner">
-            <h3>65 </h3>
-            <p>PARA CADUCAR TU LICENCIA<br/>
-            RENUEVALA AHORA </p>
+        <div class="col-lg-4 col-xs-6" ></div>
+        <div class="col-lg-4 col-xs-6" >
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>65 </h3>
+              <p>Para caducar tu licencia<br/>
+              RENUEVALA AHORA </p>
+            </div>
+            <a href="panel/licencia" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
-
-          <a href="panel/licencia" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
-        </div>
+        <div class="col-lg-4 col-xs-6" ></div>
+        <div class="col-lg-4 col-xs-6" ></div>
         <div class="col-lg-4 col-xs-6" ></div>
       </div>
 
-        
       <!--</div><!-- /.row -->
-
       <!-- =========================================================== -->
 
     </section><!-- /.content -->
