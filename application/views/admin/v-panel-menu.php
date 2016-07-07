@@ -6,11 +6,11 @@
 		<ul class="sidebar-menu">
 			<li class="header">MENU</li>
 			<li <?php echo ($menu == 1) ? 'class="active"' : ''; ?>>
-	          <a href="admin/usuario">
+	          <a href="panel/perfil">
 	            <i class="fa fa-user"></i> <span>EDITAR MI PERFIL</span> <i class="fa fa-angle-left pull-right"></i>
 	          </a>
 	          <ul class="treeview-menu">
-	            <li <?php echo ($submenu == 1) ? 'class="active"' : ''; ?>><a href="admin/usuario"><i class="fa fa-circle-o"></i>  </a></li>
+	            <li <?php echo ($submenu == 1) ? 'class="active"' : ''; ?>><a href="panel/perfil"><i class="fa fa-circle-o"></i>  </a></li>
 	            <li <?php echo ($submenu == 2) ? 'class="active"' : ''; ?>><a href="admin/tipousuario"><i class="fa fa-circle-o"></i> </a></li>
 				<li <?php echo ($submenu == 9) ? 'class="active"' : ''; ?>><a ><i class="fa fa-circle-o"></i> </a></li>
 	          </ul>
