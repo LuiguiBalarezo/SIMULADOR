@@ -26,55 +26,48 @@
     <!-- Main content -->
     <section class="content">
 
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <a class="link-shorcut" href="panel/estudio">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="fa fa-floppy-o"></i></span>
-            <div class="info-box-content bg-aqua-active">
-              <span class="info-box-text">MODULO DE ESTUDIO</span>
-              <span class="info-box-number">more info</span>
-            </div><!-- /.info-box-content -->
-          </div><!-- /.info-box -->
-        </a>
-      </div><!-- /.col -->
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <a class="link-shorcut" href="panel/cienpreguntas">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="fa fa-dashboard"></i></span>
-            <div class="info-box-content bg-green-gradient">
-              <span class="info-box-text">SIMULADOR DE 100 PREGUNTAS</span>
-              <span class="info-box-number">more info</span>
-            </div><!-- /.info-box-content -->
-          </div><!-- /.info-box -->
-        </a>
-      </div><!-- /.col -->
-
-
 
       <div class="col-lg-3 col-xs-6">
-        <div class="small-box bg-yellow-gradient">
+        <div class="small-box bg-aqua">
           <div class="inner">
-            <span class="info-box-text">SIMULADOR COMPLETO</span>
+            <h3>MODULO DE ESTUDIO</h3>
           </div>
-          <div class="icon">
 
+          <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-green">
+          <div class="inner">
+            <h3>SIMULADOR DE 100 PREGUNTAS</h3>
           </div>
-          <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+
+          <a href="panel/cienpreguntas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
 
       <div class="col-lg-3 col-xs-6">
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>SIMULADOR COMPLETO</h3>
+          </div>
+
+          <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-xs-6" style="margin-left: 250px;margin-top: 400px;">
         <div class="small-box bg-red">
           <div class="inner">
             <h3>65 dias</h3>
-            <p>para caducar tu licencia</p>
-            <span class="info-box-text">RENUEVALA AHORA</span>
-          </div>
-          <div class="icon">
+            <p>para caducar tu licencia
+            RENUEVALA AHORA </p>
 
           </div>
+
           <a href="panel/licencia" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
         </div>
