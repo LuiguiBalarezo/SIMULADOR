@@ -44,7 +44,7 @@
 				</a>
 
 			</li>
-			<li <?php echo ($menu == 5) ?  : ''; ?>>
+			<li <?php echo ($menu == 5) ?  'class="active"' : ''; ?>>
 				<a href="panel/bibliografia">
 					<i class="fa fa-dashboard"></i> <span>BIBLIOGRAFIA</span> <i class="fa fa-angle-left pull-right"></i>
 				</a>
