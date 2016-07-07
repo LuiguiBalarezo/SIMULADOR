@@ -65,8 +65,8 @@
 
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="">
-            <div class="info-box">
+          <a class="link-shorcut" href="panel/licencia">
+            <div class="box box-primary box-solid">
               <span class="info-box-icon bg-red"><i class="fa fa-bar-chart">65</i></span>
               <div class="info-box-content">
                 <span class="info-box-text">para caducar tu licencia</span>
