@@ -77,6 +77,21 @@
           </a>
         </div><!-- /.col -->
 
+      <div class="info-box bg-red">
+
+        <div class="info-box-content">
+          <span class="info-box-text">65</span>
+          <span class="info-box-number">para caducar tu licencia</span>
+          <!-- The progress section is optional -->
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+            <span class="progress-description">
+              RENUEVALA AHORA
+              <litle>more info</litle>
+            </span>
+        </div><!-- /.info-box-content -->
+      </div><!-- /.info-box -->
 
         
       <!--</div><!-- /.row -->
