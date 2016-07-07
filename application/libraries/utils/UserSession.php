@@ -34,7 +34,7 @@ class UserSession {
         if ($this->validateTypeUser()) {
             if ($this->validateTypeUser() == 1 || $this->validateTypeUser() == 2 || $this->validateTypeUser() == 4) {
                // redirect("/admin/eventoriesgo/");
-                redirect("/admin/");
+                //redirect("/admin/");
             }
         } else {
             redirect("/");
