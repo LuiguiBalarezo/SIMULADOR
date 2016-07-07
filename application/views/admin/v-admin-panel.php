@@ -1,5 +1,5 @@
 <?php $this->load->view('template/main-panel/main-head', $modulo); ?>
-<body class="hold-transition skin-blue sidebar-mini fix-padding-scrollbar">
+<body class="hold-transition black sidebar-mini fix-padding-scrollbar">
 <div class="wrapper">
 
   <?php
@@ -9,7 +9,7 @@
   <?php
   $data["menu"]     = 0;
   $data["submenu"]  = 0;
-  $this->load->view('admin/v-admin-menu', $data); ?>
+  $this->load->view('admin/v-panel-menu', $data); ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
