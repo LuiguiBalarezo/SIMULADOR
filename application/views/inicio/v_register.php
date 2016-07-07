@@ -103,14 +103,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 				</div>
+				<div class="row">
+					<div class="col-xs-4"></div>
+					<div class="col-xs-4">
+						<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+					</div><!-- /.col -->
+					<div class="col-xs-4"></div>
+				</div>
 
 
 			</form>
-
-				<div class="col-xs-4">
-					<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
-				</div><!-- /.col -->
-
 
 			<div class="social-auth-links text-center">
 
