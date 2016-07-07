@@ -87,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					if ( $("#email").val().length > 0 && $("#password").val().length > 0 ) {
 						$.LoadingOverlay("show");
 						var request = $.ajax({
-							url: "<?php echo base_url().'admin/signIn'; ?>",
+							url: "<?php echo base_url().'signIn'; ?>",
 							method: "POST",
 							data: $("#formLogin").serialize(),
 							dataType: "json"

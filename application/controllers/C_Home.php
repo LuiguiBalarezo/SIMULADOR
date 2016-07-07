@@ -29,12 +29,12 @@ class C_Home extends CI_Controller {
 		$json->data 		= array();
 		$json->status 		= FALSE;
 
-		if ($this->input->post("usuario") && $this->input->post("contrasenia_usuario")) {
+		if ($this->input->post("email") && $this->input->post("password")) {
 
-			$result = $this->M_Admin_Login->signIn(trim($this->input->post("usuario", TRUE)));
+			$result = $this->M_Admin_Login->signIn(trim($this->input->post("email", TRUE)));
 			if (sizeof($result) > 0 ) {
 				$Usuario = $result[0];
-				if ($this->cryptography->validateHash($Usuario->password, trim($this->input->post("contrasenia_usuario", TRUE)))) {
+				if ($this->cryptography->validateHash($Usuario->password, trim($this->input->post("password", TRUE)))) {
 
 					$sessionUser = array(
 						'user_session'          => TRUE,
@@ -47,7 +47,7 @@ class C_Home extends CI_Controller {
 						'nombre_tipo_usuario'	=> $Usuario->nombre_tipo_usuario,
 					);
 
-					$json->data = array("url_redirect" => base_url()."admin");
+					$json->data = array("url_redirect" => base_url()."panel");
 
 					$this->session->set_userdata($sessionUser);
 
