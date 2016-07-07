@@ -90,8 +90,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="agree">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								<label>
+									<input type="checkbox" class="minimal"> I agree
+								</label>
 							</div>
 						</div>
 
