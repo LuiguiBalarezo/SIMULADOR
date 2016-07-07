@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body class="hold-transition login-page" style="background: #d2d6de;">
 	<!-- <body class="hold-transition" style="background: #4CAF50;"> -->
-	<div class="login-box">
+	<div class="register-box">
 		<div class="login-logo">
 			<img src="<?php echo PATH_RESOURCE_ADMIN; ?>img/icon/logo_white.png" style="width: 100%;" >
              
