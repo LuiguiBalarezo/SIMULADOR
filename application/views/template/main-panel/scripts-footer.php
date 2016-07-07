@@ -29,3 +29,5 @@
 <!-- Sweet Alert -->
 <script src="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.min.js"></script>
 <script type='text/javascript' src="<?php echo base_url().PATH_RESOURCE_ADMIN; ?>js/loadingoverlay.js"></script>
+
+<script src="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/icheck.min.js"></script>
