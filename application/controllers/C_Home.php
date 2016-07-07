@@ -24,7 +24,7 @@ class C_Home extends CI_Controller {
 
 	public function register() {
 
-		$this->load->view('inicio/v_home');
+		$this->load->view('inicio/v_register');
 
 	}
 
