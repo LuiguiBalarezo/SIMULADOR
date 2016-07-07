@@ -30,8 +30,8 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-aqua">
           <div class="inner">
-            <p><h4><center>MODULO DE</center>
-              <center>ESTUDIO</center></h4></p>
+            <p><h3><center>MODULO DE</center>
+              <center>ESTUDIO</center></h3></p>
           </div>
 
           <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
@@ -41,8 +41,8 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-green">
           <div class="inner">
-            <h4>SIMULADOR
-              100 PREGUNTAS</h4>
+            <center><h3>SIMULADOR
+              100 PREGUNTAS</h3></center>
           </div>
 
           <a href="panel/cienpreguntas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
@@ -53,8 +53,8 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-yellow">
           <div class="inner">
-            <h4>SIMULADOR
-              COMPLETO</h4>
+            <center><h3>SIMULADOR
+              COMPLETO</h3></center>
           </div>
 
           <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
@@ -65,9 +65,9 @@
       <div class="col-lg-3 col-xs-6" style="margin-left: 100px;margin-top: 40px;">
         <div class="small-box bg-red">
           <div class="inner">
-            <h3>65 dias</h3>
-            <h6><p>para caducar tu licencia
-            RENUEVALA AHORA </p></h6>
+            <h3>65 </h3>
+            <CENTER><p>PARA CADUCAR TU LICENCIA
+            RENUEVALA AHORA </p></CENTER>
 
           </div>
 
