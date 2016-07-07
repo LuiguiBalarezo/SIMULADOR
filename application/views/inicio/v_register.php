@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p class="login-box-msg">INICIAR SESION</p>
 			<form id="Form"  method="post">
 				<div class="row">
-					<div class="col-xs-12">
+
 						<div class="col-xs-6">
 							<div class="form-group has-feedback">
 								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 						</div>
-					</div>
+
 
 				</div>
 				<div class="row">
