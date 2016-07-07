@@ -90,13 +90,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="CONTRASEÑA">
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
-							<div class="col-xs-8">
-								<div class="checkbox icheck">
-									<label>
-										<input type="checkbox"> Remember Me
-									</label>
-								</div>
-							</div><!-- /.col -->
+							<div class="form-group has-feedback">
+								<label>FECHA DE REGISTRO 07/07/2016</label>
+							</div>
+							<div class="checkbox icheck">
+								<label>
+									<input type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
+								</label>
+							</div>
+
 						</div>
 
 
