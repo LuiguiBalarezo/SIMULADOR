@@ -64,20 +64,18 @@
       
 
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <a class="link-shorcut" href="panel/licencia">
-            <div class="info-box">
-              <span class="info-box-number bg-red"><i class="fa fa-user">65</i></span>
-              <div class="info-box-content bg-red">
-                <span class="info-box-text">Para caducar tu licencia</span>
-                <span class="info-box-text"></span>
-                <span class="info-box-text">RENUEVALA AHORA</span>
-                <span class="info-box-text">more info</span>
-              </div><!-- /.info-box-content -->
-            </div><!-- /.info-box -->
-          </a>
-        </div><!-- /.col -->
 
+        <div class="small-box bg-red">
+          <div class="inner">
+            <h3>65 dias</h3>
+            <p>para caducar tu licencia</p>
+            <span class="info-box-text">RENUEVALA AHORA</span>
+          </div>
+          <div class="icon">
+
+          </div>
+          <a href="panel/licencia" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
 
 
         
