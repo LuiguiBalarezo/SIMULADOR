@@ -29,7 +29,7 @@ class C_Home extends CI_Controller {
 		$json->data 		= array();
 		$json->status 		= FALSE;
 
-		var_dump($this->input->post());
+
 		if ($this->input->post("txtEmail") && $this->input->post("txtPassword")) {
 
 			$result = $this->M_Admin_Login->signIn(trim($this->input->post("email", TRUE)));
