@@ -11,11 +11,11 @@ class C_Home extends CI_Controller {
 	}
 
 	public function index() {
-		if ($this->session->has_userdata('usuario')) {
-			 redirect('/admin/');
-		} else {
+//		if ($this->session->has_userdata('usuario')) {
+//			 redirect('/admin/');
+//		} else {
 			$this->load->view('v_home');
-		}
+//		}
 
 	}
 	public function signIn() {
