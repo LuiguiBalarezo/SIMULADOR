@@ -59,7 +59,7 @@
       </div>
 
 
-      <div class="col-lg-3 col-xs-6" style="margin-left: 250px;margin-top: 400px;">
+      <div class="col-lg-3 col-xs-6" style="margin-left: 200px;margin-top: 100px;">
         <div class="small-box bg-red">
           <div class="inner">
             <h3>65 dias</h3>
