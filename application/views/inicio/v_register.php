@@ -48,21 +48,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<div class="col-xs-6">
 							<div class="form-group has-feedback">
-								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
+								<input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="NOMBRES">
 								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="Password">
+								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="APELLIDO PATERNO">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="APELLIDO MATERNO">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="DEPARTAMENTO">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="PROVINCIA">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="DISTRITO">
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 						</div>
 						<div class="col-xs-6">
 							<div class="form-group has-feedback">
-								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
+								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="DNI">
 								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="Password">
+								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="TELEFONO">
+								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="CORREO ELECTRONICO">
+								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="CONTRASEÑA">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="agree">
 								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 						</div>
@@ -88,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			</div><!-- /.social-auth-links -->
 
-			<a href="#">Olvide mi Contraseña</a><br>
+
 			<a href="register.html" class="text-center">Registrate como miembro</a>
 
 		</div><!-- /.login-box-body -->
