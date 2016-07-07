@@ -58,7 +58,7 @@ class C_Home extends CI_Controller {
 			}
 
 		}else{
-			echo "No se pudo loguear";
+			redirect('register');
 		}
 
 	}
