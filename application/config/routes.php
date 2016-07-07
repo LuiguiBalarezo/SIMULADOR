@@ -70,6 +70,7 @@ $route['signIn']				= 'C_Home/signIn';
 */
 
 $route['facebook']				= 'C_Home/facebook';
+$route['handlefacebook']		= 'C_Home/handle_facebook_login';
 
 /*
 | ------------------------------
