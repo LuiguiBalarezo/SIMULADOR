@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div><!-- /.login-logo -->
 		<div class="login-box-body">
 			<p class="login-box-msg">INICIAR SESION</p>
-			<form  method="post">
+			<form id="Form"  method="post">
 				<div class="form-group has-feedback">
 					<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
 					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -88,9 +88,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						$.LoadingOverlay("show");
 						var request = $.ajax({
 							url: "<?php echo base_url().'signIn'; ?>",
-							method: "POST",
-							data: $("#formLogin").serialize(),
-							dataType: "json"
+							type: "post",
+							data: $("#Form").serialize(),
+							dataType: 'json'
 						});
 
 						request.done(function( response ) {
