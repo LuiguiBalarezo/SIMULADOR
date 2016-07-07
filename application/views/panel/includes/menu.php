@@ -74,7 +74,7 @@
 
             <li class="ds-in-bl">
 
-                <a href="blank.php" target="_blank">
+                <a href="login" target="_blank">
 
                     ACCEDER AL SIMULADOR
 
