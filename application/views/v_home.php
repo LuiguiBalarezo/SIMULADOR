@@ -43,13 +43,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div><!-- /.login-logo -->
 		<div class="login-box-body">
 			<p class="login-box-msg">INICIAR SESION</p>
-			<form action="../../index2.html" method="post">
+			<form  method="post">
 				<div class="form-group has-feedback">
-					<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+					<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
 					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
-					<input type="password" name="password" id="password" class="form-control" placeholder="Password">
+					<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="Password">
 					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">
@@ -84,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$("#btnSignIn").on("click", function(evt){
 					evt.preventDefault();
 					//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
-					if ( $("#email").val().length > 0 && $("#password").val().length > 0 ) {
+					if ( $("#txtEmail").val().length > 0 && $("#txtPassword").val().length > 0 ) {
 						$.LoadingOverlay("show");
 						var request = $.ajax({
 							url: "<?php echo base_url().'signIn'; ?>",
