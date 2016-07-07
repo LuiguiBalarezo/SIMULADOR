@@ -31,6 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
+	<script type='text/javascript' src="<?php echo base_url().PATH_RESOURCE_ADMIN; ?>js/loadingoverlay.js"></script>
     <![endif]-->
 </head>
 <body class="hold-transition login-page" style="background: #d2d6de;">
@@ -84,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					evt.preventDefault();
 					//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
 					if ( $("#usuario").val().length > 0 && $("#contrasenia_usuario").val().length > 0 ) {
-						waitingDialog.show('Iniciando sesion...');
+
 						var request = $.ajax({
 							url: "<?php echo base_url().'admin/signIn'; ?>",
 							method: "POST",
@@ -93,7 +94,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						});
 
 						request.done(function( response ) {
-							waitingDialog.hide();
+
 							if (response.status) {
 								$(location).attr("href", response.data.url_redirect);
 							} else {
@@ -103,12 +104,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						});
 
 						request.fail(function( jqXHR, textStatus ) {
-							waitingDialog.hide();
+
 							swal("Error", textStatus, "error");
 							
 						});
 					} else {
-						waitingDialog.hide();
+
 						swal("Error", "Ingrese sus datos de usuario correctamente.", "error");
 						
 					}
