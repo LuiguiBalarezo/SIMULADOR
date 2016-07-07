@@ -30,7 +30,7 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-aqua">
           <div class="inner">
-            <h3>MODULO DE ESTUDIO</h3>
+            <p>MODULO DE ESTUDIO</p>
           </div>
 
           <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
@@ -40,7 +40,7 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-green">
           <div class="inner">
-            <h3>SIMULADOR DE 100 PREGUNTAS</h3>
+            <p>SIMULADOR DE 100 PREGUNTAS</p>
           </div>
 
           <a href="panel/cienpreguntas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
@@ -51,7 +51,7 @@
       <div class="col-lg-3 col-xs-6">
         <div class="small-box bg-yellow">
           <div class="inner">
-            <h3>SIMULADOR COMPLETO</h3>
+            <p>SIMULADOR COMPLETO</p>
           </div>
 
           <a href="panel/completo" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
