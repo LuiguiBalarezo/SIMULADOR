@@ -57,17 +57,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="col-xs-6">
-							<div class="row">
-								<div class="col-xs-8">
-									<div class="checkbox icheck">
-
-									</div>
-								</div><!-- /.col -->
-								<div class="col-xs-4">
-									<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
-								</div><!-- /.col -->
+							<div class="form-group has-feedback">
+								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email">
+								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="Password">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="checkbox icheck">
+
+							</div>
+						</div><!-- /.col -->
+						<div class="col-xs-4">
+							<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+						</div><!-- /.col -->
 					</div>
 				</div>
 
