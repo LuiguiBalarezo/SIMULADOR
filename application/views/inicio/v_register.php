@@ -103,18 +103,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 				</div>
-				<div class="row">
-					<div class="col-xs-8">
-						<div class="checkbox icheck">
 
-						</div>
-					</div><!-- /.col -->
-					<div class="col-xs-4">
-						<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
-					</div><!-- /.col -->
-				</div>
 
 			</form>
+			<div class="social-auth-links text-center">
+				<div class="col-xs-4">
+					<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+				</div><!-- /.col -->
+			</div>
 
 			<div class="social-auth-links text-center">
 				<p>- OR -</p>
@@ -122,8 +118,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			</div><!-- /.social-auth-links -->
 
-
-			<a href="register.html" class="text-center">Registrate como miembro</a>
 
 		</div><!-- /.login-box-body -->
 
