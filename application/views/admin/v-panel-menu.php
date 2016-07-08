@@ -15,7 +15,7 @@
 		</div>
 
 
-		<ul class="sidebar-menu">
+		<ul class="sidebar-menu " style="color:#b8c7ce;">
 			<li class="header">MAIN NAVIGATION</li>
 			<li <?php echo ($menu == 1) ? 'class="active"' : ''; ?>>
 	          <a href="panel/perfil">
