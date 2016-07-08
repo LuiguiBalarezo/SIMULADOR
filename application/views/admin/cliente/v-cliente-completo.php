@@ -30,39 +30,38 @@
         <!-- Main content -->
         <section class="content">
             <div class="row">
+                <h2>A QUE GENERACION CORRESPONDEN LOS DERECHOS ECONOMICOS, SOCIALES Y CULTURALES ?</h2>
                 <div class="form-group">
-                    <label>Tema</label>
-                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                        <option selected="selected">Tema</option>
-
-                    </select>
-                    <span class="select2 select2-container select2-container--default select2-container--below select2-container--open"
-                          dir="ltr" style="width: 100%;">
-                        <span class="selection">
-                            <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="true" tabindex="0" aria-labelledby="select2-n588-container" aria-owns="select2-n588-results" aria-activedescendant="select2-n588-result-6lmh-Alaska">
-                                <span class="select2-selection__rendered" id="select2-n588-container" title="Tema"></span>
-                                <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
-                            </span>
-                        </span>
-                        <span class="dropdown-wrapper" aria-hidden="true"></span>
-                    </span>
-                </div>
-                <div class="form-group">
-                    <label>Sub Tema</label>
-                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                        <option selected="selected">Tema</option>
-
-                    </select>
-                    <span class="select2 select2-container select2-container--default select2-container--below select2-container--open"
-                          dir="ltr" style="width: 100%;">
-                        <span class="selection">
-                            <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="true" tabindex="0" aria-labelledby="select2-n588-container" aria-owns="select2-n588-results" aria-activedescendant="select2-n588-result-6lmh-Alaska">
-                                <span class="select2-selection__rendered" id="select2-n588-container" title="Tema"></span>
-                                <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
-                            </span>
-                        </span>
-                        <span class="dropdown-wrapper" aria-hidden="true"></span>
-                    </span>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="alt_a" checked="">
+                            A LA PRIMERA GENERACION
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="alt_b">
+                            A LA TERCERA GENERACION
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            A LA QUINTA GENERACION
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                            A LA CUARTA GENERACION
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                            A LA SEGUNDA GENERACION
+                        </label>
+                    </div>
                 </div>
 
             </div>
