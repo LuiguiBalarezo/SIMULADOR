@@ -16,7 +16,6 @@ class M_Home extends CI_Model {
     }
     public function registerUser($data) {
         $data = array(
-            "usuario"               => $data["usuario"],
             "password"              => $data["password"],
             "email"                 => $data["email"],
             "nombre"                => $data["nombre"],
