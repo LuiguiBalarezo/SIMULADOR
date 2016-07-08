@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<!-- Text input-->
 
 							<div class="form-group">
-								<label class="col-md-4 control-label" >Last Name</label>
+								<label class="control-label" >Last Name</label>
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
