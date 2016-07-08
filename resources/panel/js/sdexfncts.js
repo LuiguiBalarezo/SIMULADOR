@@ -160,9 +160,7 @@ $(document).ready(function(){
                         integer: {
                             message: 'El valor ingresado no es un entero'
                         },
-                        stringLength: {
-                            min: 8,
-                        },
+
                     }
                 },
                 txtTelefono: {
@@ -170,9 +168,8 @@ $(document).ready(function(){
                         notEmpty: {
                             message: 'Porfavor ingrese su numero de telefono'
                         },
-                        phone: {
-                            country: 'PE',
-                            message: 'Porfavor ingrese un telefono valido con un codigo de area'
+                        stringLength: {
+                            min: 6,
                         }
                     }
                 },
@@ -209,6 +206,77 @@ $(document).ready(function(){
             }, 'json');
         });
 
+
+
+    $("#cbDepartamento").on("change",function(){
+        var formData = new FormData();
+        if($(this).val() != ''){
+            formData.append("id", $(this).val());
+            $("#cbProvincia").empty();
+            $("#cbProvincia").append("<option value=''>PROVINCIA</option>");
+            $("#cbDistrito").empty();
+            $("#cbDistrito").append("<option value=''>DISTRITO</option>");
+            var request = $.ajax({
+                url: base_url + "getProvincias",
+                type: "post",
+                data: formData,
+                contentType: false,
+                processData: false
+            });
+            request.done(function(response) {
+                if (response.status) {
+                    for (var i = 0; i < response.data.length; i++) {
+                        $("#cbProvincia").append("<option value='" + response.data[i].idProvincia + "'>" + response.data[i].nom_provincia + "</option>");
+                    }
+                } else {
+                    swal("Error", response.message, "error");
+                }
+            });
+            request.fail(function( jqXHR, textStatus ) {
+                swal("Error", textStatus, "error");
+            });
+        }else{
+            $("#cbProvincia").empty();
+            $("#cbProvincia").append("<option value=''>PROVINCIA</option>");
+        }
+
+
+    });
+
+    $("#cbProvincia").on("change",function(){
+        var formData = new FormData();
+        if($(this).val() != ''){
+            formData.append("id", $(this).val());
+            $("#cbDistrito").empty();
+            $("#cbDistrito").append("<option value=''>DISTRITO</option>");
+            var request = $.ajax({
+                url: base_url + "getDistritos",
+                type: "post",
+                data: formData,
+                contentType: false,
+                processData: false
+            });
+
+            request.done(function(response) {
+                if (response.status) {
+                    for (var i = 0; i < response.data.length; i++) {
+                        $("#cbDistrito").append("<option value='" + response.data[i].idDistrito + "'>" + response.data[i].nom_distrito + "</option>");
+                    }
+                } else {
+                    swal("Error", response.message, "error");
+                }
+            });
+
+            request.fail(function( jqXHR, textStatus ) {
+                swal("Error", textStatus, "error");
+            });
+        }else{
+            $("#cbDistrito").empty();
+            $("#cbDistrito").append("<option value=''>DISTRITO</option>");
+        }
+
+
+    });
 
 
 });

@@ -75,6 +75,14 @@ $route['handlefacebook']		= 'C_Home/handle_facebook_login';
 
 /*
 | ------------------------------
+| URL -> GEO DATA
+| ------------------------------
+*/
+$route['getProvincias']			= 'C_Geo/getProvincias';
+$route['getDistritos']			= 'C_Geo/getDistritos';
+
+/*
+| ------------------------------
 | URL -> PANEL
 | ------------------------------
 */
