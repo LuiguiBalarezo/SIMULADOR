@@ -1,7 +1,8 @@
 /**
  * Created by ucweb03 on 08/07/2016.
  */
-$(document).ready(function(){
+$(document).on('submit', '.user_access_form', function(event){
+    event.preventDefault();
     function getAbsolutePath() {
         var loc = window.location;
         var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
