@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="form-group has-feedback">
 
-								<select name="cbDepartamento" required="" class="form-control st">
+								<select name="cbDepartamento" id="cbDepartamento" required="" class="form-control st">
 									<option selected value="">DEPARTAMENTO</option>
 									<?php foreach($modulo->departamento as $departamento): ?>
 										<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
