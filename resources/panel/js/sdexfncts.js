@@ -195,13 +195,13 @@ $(document).ready(function(){
                 },
 
 
-            },
-            onSuccess: function(e, data) {
-                //this section before submit
-                alert('Success');
             }
 
 
+        })
+        .on('success.form.fv', function(e) {
+            e.preventDefault();
+            return false;
         });
         //.on('success.form.bv', function(e) {
         //    // Prevent form submission
