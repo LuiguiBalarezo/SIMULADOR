@@ -1,14 +1,15 @@
-<?php $this->load->view('template/main-panel/main-head'); ?>
+<?php $this->load->view('template/main-panel/main-head', $modulo); ?>
 <body class="hold-transition bg-black sidebar-mini fix-padding-scrollbar">
 <div class="wrapper">
 
     <?php
-
-    $this->load->view('template/main-panel/header'); ?>
+    $data["modulo"] = $modulo;
+    $this->load->view('template/main-panel/header', $data); ?>
 
     <?php
-
-    $this->load->view('admin/v-panel-menu'); ?>
+    $data["menu"]     = 4;
+    $data["submenu"]  = 0;
+    $this->load->view('admin/v-panel-menu', $data); ?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -45,19 +46,19 @@
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="alt_c">
                             A LA QUINTA GENERACION
                         </label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="alt_d">
                             A LA CUARTA GENERACION
                         </label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                            <input type="radio" name="optionsRadios" id="optionsRadios5" value="alt_e">
                             A LA SEGUNDA GENERACION
                         </label>
                     </div>
