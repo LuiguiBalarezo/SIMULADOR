@@ -43,7 +43,7 @@ class C_Home extends CI_Controller {
 			$json->data             = array();
 			$json->status           = FALSE;
 			var_dump( $this->input->post());
-			if ( $this->input->post("txtNombre") && $this->input->post("txtApellidoP") && $this->input->post("txtApellidM") && $this->input->post("cbDepartamento")) {
+			if ( $this->input->post("txtNombre") && $this->input->post("txtApellidoP") && $this->input->post("txtApellidoM") && $this->input->post("cbDepartamento")) {
 
 
 				$resultado = $this->M_Home->getByEmail(trim($this->input->post("txtEmail", TRUE)));
