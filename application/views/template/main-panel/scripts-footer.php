@@ -31,3 +31,5 @@
 <script type='text/javascript' src="<?php echo base_url().PATH_RESOURCE_ADMIN; ?>js/loadingoverlay.js"></script>
 
 <script src="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/icheck.min.js"></script>
+<script src="<?php echo PATH_RESOURCE_PANEL; ?>js/sdexfncts.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>

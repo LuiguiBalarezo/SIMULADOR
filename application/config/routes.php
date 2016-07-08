@@ -62,6 +62,7 @@ $route['home']					= 'C_Home';
 $route['login']				    = 'C_Home/login';
 $route['register']				= 'C_Home/register';
 $route['signIn']				= 'C_Home/signIn';
+$route['registerIn']			= 'C_Home/registerIn';
 
 /*
 | ------------------------------

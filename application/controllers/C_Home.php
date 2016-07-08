@@ -23,8 +23,10 @@ class C_Home extends CI_Controller {
 	}
 
 	public function register() {
-
-		$this->load->view('inicio/v_register');
+		$modulo                     = new stdClass();
+		$modulo->departamento       = $this->M_GeoData->getDepartamento();
+		$data["modulo"] = $modulo;
+		$this->load->view('inicio/v_register',$data);
 
 	}
 

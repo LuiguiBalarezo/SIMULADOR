@@ -32,6 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/square/blue.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
 
     <![endif]-->
 </head>
@@ -61,9 +62,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtDepartamento" id="txtDepartamento" class="form-control" placeholder="DEPARTAMENTO">
+
+								<select id="cbDepartamento" required="" class="form-control st">
+									<option selected value="">- Departamento -</option>
+									<?php foreach($modulo->departamento as $departamento): ?>
+										<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
+									<?php endforeach; ?>
+
+								</select>
 								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
 							</div>
+
 							<div class="form-group has-feedback">
 								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
 								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
@@ -126,51 +135,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div><!-- /.login-box -->
 	
     <?php $this->load->view('template/main-panel/scripts-footer'); ?>
-    <script>
-            
-        $(function () {
-			$("#btnRegister").on("click", function(evt){
-				evt.preventDefault();
-				//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
-				if ( $("#RegisterForm").val().length > 0 && $("#txtPassword").val().length > 0 ) {
-					$.LoadingOverlay("show");
-					var request = $.ajax({
-						url: "<?php echo base_url().'signIn'; ?>",
-						type: "post",
-						data: $("#RegisterForm").serialize(),
-						dataType: 'json'
-					});
 
-					request.done(function( response ) {
-						$.LoadingOverlay("hide");
-						if (response.status) {
-							$(location).attr("href", response.data.url_redirect);
-						} else {
-							swal("Error", response.message, "error");
-
-						}
-					});
-
-					request.fail(function( jqXHR, textStatus ) {
-						$.LoadingOverlay("hide");
-						swal("Error", textStatus, "error");
-
-					});
-				} else {
-
-					swal("Error", "Ingrese sus datos de usuario correctamente.", "error");
-
-				}
-			});
-			$('input').iCheck({
-				checkboxClass: 'icheckbox_square-blue',
-				radioClass: 'iradio_square-blue',
-				increaseArea: '20%' // optional
-			});
-				
-
-		});
-        
-    </script>
     </body>
 </html>

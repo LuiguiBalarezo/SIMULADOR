@@ -92,5 +92,6 @@ define('PATH_RESOURCE_DIST', 		'resources/dist/');
 define('PATH_RESOURCE_PLUGINS', 	'resources/plugins/');
 define('PATH_RESOURCE_ADMIN', 		'resources/admin/');
 define('PATH_RESOURCE_MAIN', 		'resources/main/');
+define('PATH_RESOURCE_PANEL', 		'resources/panel/');
 
 /* <--------------------> END <-------------------> */
