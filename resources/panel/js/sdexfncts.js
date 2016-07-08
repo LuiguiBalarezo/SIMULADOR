@@ -49,32 +49,32 @@ $(document).ready(function(){
     });
 
 
-    //$("#btnRegister").on("click", function(evt){
-    //    evt.preventDefault();
-    //
-    //    $.LoadingOverlay("show");
-    //    var request = $.ajax({
-    //        url: base_url+'registerIn',
-    //        type: "post",
-    //        data: $("#RegisterForm").serialize(),
-    //        dataType: 'json'
-    //    });
-    //
-    //    request.done(function( response ) {
-    //        $.LoadingOverlay("hide");
-    //        if (response.status) {
-    //            $(location).attr("href", response.data.url_redirect);
-    //        } else {
-    //            swal("Error", response.message, "error");
-    //        }
-    //    });
-    //    request.fail(function( jqXHR, textStatus ) {
-    //        $.LoadingOverlay("hide");
-    //        swal("Error", textStatus, "error");
-    //
-    //    });
-    //
-    //});
+    $("#btnRegister").on("click", function(evt){
+        evt.preventDefault();
+
+        $.LoadingOverlay("show");
+        var request = $.ajax({
+            url: base_url+'registerIn',
+            type: "post",
+            data: $("#RegisterForm").serialize(),
+            dataType: 'json'
+        });
+
+        request.done(function( response ) {
+            $.LoadingOverlay("hide");
+            if (response.status) {
+                swal("Registro Completo", response.message, "success");
+            } else {
+                swal("Error", response.message, "error");
+            }
+        });
+        request.fail(function( jqXHR, textStatus ) {
+            $.LoadingOverlay("hide");
+            swal("Error", textStatus, "error");
+
+        });
+
+    });
 
     $('input').iCheck({
         checkboxClass: 'icheckbox_square-blue',
@@ -83,190 +83,9 @@ $(document).ready(function(){
     });
 
 
-    $('#registerForm').bootstrapValidator({
-            // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-            feedbackIcons: {
-                valid: 'glyphicon glyphicon-ok',
-                invalid: 'glyphicon glyphicon-remove',
-                validating: 'glyphicon glyphicon-refresh'
-            },
-            fields: {
-                txtNombre: {
-                    validators: {
-                        stringLength: {
-                            min: 2,
-                        },
-                        notEmpty: {
-                            message: 'Porfavor ingrese su Nombre'
-                        }
-                    }
-                },
-                txtApellidoP: {
-                    validators: {
-                        stringLength: {
-                            min: 2,
-                        },
-                        notEmpty: {
-                            message: 'Porfavor ingrese su apellido paterno'
-                        }
-                    }
-                },
-                txtApellidoM: {
-                    validators: {
-                        stringLength: {
-                            min: 2,
-                        },
-                        notEmpty: {
-                            message: 'Porfavor ingrese su apellido materno'
-                        }
-                    }
-                },
-                cbDepartamento: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Porfavor seleccione su departamento'
-                        }
-                    }
-                },
-                cbProvincia: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Porfavor seleccione su provincia'
-                        }
-                    }
-                },
-                cbDistrito: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Porfavor seleccione su distrito'
-                        }
-                    }
-                },
-                txtDireccion: {
-                    validators: {
-                        stringLength: {
-                            min: 15,
-                        },
-                        notEmpty: {
-                            message: 'Porfavor ingrese su direccion'
-                        }
-                    }
-                },
-                txtDni: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Porfavor ingrese su numero de Dni'
-                        },
-                        integer: {
-                            message: 'El valor ingresado no es un entero'
-                        },
-
-                    }
-                },
-                txtTelefono: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Porfavor ingrese su numero de telefono o celular'
-                        },
-                        stringLength: {
-                            min: 6,
-                        }
-                    }
-                },
-                txtCorreo: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Porfavor ingrese su direccion de correo electronico'
-                        },
-                        emailAddress: {
-                            message: 'Porfavor ingrese una direccion de correo electronico valida'
-                        }
-                    }
-                },
-                txtPassword: {
-                    validators: {
-                        stringLength: {
-                            min: 6,
-                        },
-                        notEmpty: {
-                            message: 'Porfavor ingrese su Contraseña'
-                        }
-                    }
-                }
 
 
-            }
 
-
-        }).on('success.form.bv', function(e) {
-            //$('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-            //$('#contact_form').data('bootstrapValidator').resetForm();
-
-        // Prevent form submission
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-
-        //// Get the form instance
-        //var $form = $(e.target);
-        //
-        //// Get the BootstrapValidator instance
-        //var bv = $form.data('bootstrapValidator');
-        //
-        //// Use Ajax to submit form data
-        //$.post($form.attr('action'), $form.serialize(), function(result) {
-        //    console.log(result);
-        //}, 'json');
-    });
-
-        function callAjax(form)
-        {
-            alert("hola");
-        }
-        //$('#registerForm').on('success.form.bv', function(e) {
-        //    e.preventDefault();
-        //    return false;
-        //});
-        //.on('success.form.bv', function(e) {
-        //    // Prevent form submission
-        //    e.preventDefault();
-        //    //$('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-        //    $('#registerForm').data('bootstrapValidator').resetForm();
-        //
-        //    return false;
-        //
-        //
-        //    // Get the form instance
-        //    var $form = $(e.target);
-        //
-        //    // Get the BootstrapValidator instance
-        //    var bv = $form.data('bootstrapValidator');
-        //
-        //    // Use Ajax to submit form data
-        //
-        //
-        //    // Use Ajax to submit form data
-        //    //$.post(base_url+"registerIn", $('#registerForm').serialize(), function(result) {
-        //    //    console.log(result);
-        //    //});
-        //    //var request = $.ajax({
-        //    //    url: base_url + "registerIn",
-        //    //    type: "post",
-        //    //    data:  $('#registerForm').serialize(),
-        //    //    contentType: false,
-        //    //    processData: false
-        //    //});
-        //    //request.done(function(response) {
-        //    //    if (response.status) {
-        //    //        swal("OK", response.message, "success");
-        //    //    } else {
-        //    //        swal("Error", response.message, "error");
-        //    //    }
-        //    //});
-        //    //request.fail(function( jqXHR, textStatus ) {
-        //    //    swal("Error", textStatus, "error");
-        //    //});
-        //});
 
 
 

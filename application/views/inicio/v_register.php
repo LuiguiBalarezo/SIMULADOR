@@ -47,159 +47,87 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p class="login-box-msg">REGISTRARSE</p>
 
 			<div class="container">
-
-				<form class="" method="post"  id="registerForm">
+				<form id="RegisterForm"  method="post">
 					<div class="row">
-						<div class="col-md-3 col-xs-12">
-							<div class="form-group">
-<!--								<label class="">Nombres</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-										<input id="txtNombre"  name="txtNombre" placeholder="NOMBRES" class="form-control"  type="text">
-									</div>
-								</div>
+
+						<div class="col-md-6 col-xs-12">
+							<div class="form-group has-feedback">
+								<input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="NOMBRES">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
-							<div class="form-group">
-<!--								<label class="control-label" >Apellido Paterno</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-										<input name="txtApellidoP" placeholder="APELLIDO PATERNO" class="form-control"  type="text">
-									</div>
-								</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtApellidoP" id="txtApellidoP" class="form-control" placeholder="APELLIDO PATERNO">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
-							<div class="form-group">
-<!--								<label class="control-label" >Apellido Materno</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-										<input name="txtApellidoM" placeholder="APELLIDO MATERNO" class="form-control"  type="text">
-									</div>
-								</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtApellidMo" id="txtApellidoM" class="form-control" placeholder="APELLIDO MATERNO">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
-							<div class="form-group">
-<!--								<label class="control-label" >Departamento</label>-->
-								<div class="selectContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select name="cbDepartamento" id="cbDepartamento" class="form-control selectpicker" >
-											<option selected value="">DEPARTAMENTO</option>
-											<?php foreach($modulo->departamento as $departamento): ?>
-												<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
-											<?php endforeach; ?>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-<!--								<label class="control-label" >Provincia</label>-->
-								<div class="selectContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select name="cbProvincia" id="cbProvincia" class="form-control selectpicker" >
-											<option selected value="">PROVINCIA</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-<!--								<label class="control-label" >Distrito</label>-->
-								<div class="selectContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select name="cbDistrito" id="cbDistrito" class="form-control selectpicker" >
-											<option selected value="">DISTRITO</option>
-										</select>
-									</div>
-								</div>
+							<div class="form-group has-feedback">
+
+								<select id="cbDepartamento" required="" class="form-control st">
+									<option selected value="">DEPARTAMENTO</option>
+									<?php foreach($modulo->departamento as $departamento): ?>
+										<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
+									<?php endforeach; ?>
+
+								</select>
 
 							</div>
-							<div class="form-group">
-<!--								<label class=" control-label">Dirección</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-										<input name="txtDireccion" placeholder="DIRECCION" class="form-control" type="text">
-									</div>
-								</div>
+
+							<div class="form-group has-feedback">
+								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
+
 							</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtDistrito" id="txtDistrito" class="form-control" placeholder="DISTRITO">
 
-
+							</div>
 						</div>
-
-						<div class="col-md-3 col-xs-12">
-							<div class="form-group">
-<!--								<label class=" control-label">DNI</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-										<input name="txtDni" placeholder="DNI" class="form-control"  type="text">
-									</div>
-								</div>
+						<div class="col-md-6 col-xs-12">
+							<div class="form-group has-feedback">
+								<input type="email" name="txtDni" id="txtDni" class="form-control" placeholder="DNI">
+								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
 							</div>
-							<div class="form-group">
-<!--								<label class=" control-label">Teléfono</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-										<input name="txtTelefono" placeholder="(01)555-1212" class="form-control" type="text">
-									</div>
-								</div>
+							<div class="form-group has-feedback">
+								<input type="email" name="txtTelefono" id="txtTelefono" class="form-control" placeholder="TELEFONO">
+								<span class="glyphicon glyphicon-phone form-control-feedback"></span>
 							</div>
-
-							<div class="form-group">
-<!--								<label class=" control-label">Correo Electrónico</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-										<input name="txtCorreo" placeholder="CORREO ELECTRONICO" class="form-control"  type="text">
-									</div>
-								</div>
+							<div class="form-group has-feedback">
+								<input type="email" name="txtCorreo" id="txtCorreo" class="form-control" placeholder="CORREO ELECTRONICO">
+								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 							</div>
-
-							<div class="form-group">
-<!--								<label class=" control-label">Contraseña</label>-->
-								<div class=" inputGroupContainer">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-										<input name="txtPassword" placeholder="CONTRASEÑA" class="form-control"  type="password">
-									</div>
-								</div>
+							<div class="form-group has-feedback">
+								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="CONTRASEÑA">
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback" style="text-align: center">
 								<label style="margin-top: 8px;">FECHA DE REGISTRO 07/07/2016</label>
 							</div>
 							<div class="checkbox icheck">
 								<label style="margin-top: 6px">
-									<input name="ckTerminos" id="ckTerminos" type="checkbox"><div style="margin-left: 30px;margin-top: -23px"> Estoy de acuerdo con los <a>Términos y condiciones</a></div>
+									<input name="ckTerminos" id="ckTerminos" type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
 								</label>
 							</div>
 
-
 						</div>
 
+
 					</div>
-					<div class="form-group">
-						<div class="col-xs-1"></div>
+					<!-- Success message -->
+					<!--				<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>-->
+
+					<div class="row">
+						<div class="col-xs-4"></div>
 						<div class="col-xs-4">
-							<label class="control-label"></label>
-							<div class="">
-								<button type="submit" class="btn btn-primary btn-block btn-flat" >Send </button>
-							</div>
-						</div>
+							<button type="submit" id="btnRegister" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+						</div><!-- /.col -->
+						<div class="col-xs-4"></div>
 					</div>
-<!--					<div class="row">-->
-<!--						<div class="col-xs-4"></div>-->
-<!--						<div class="col-xs-4">-->
-<!--							<button type="submit" id="btnRegister" class="btn btn-primary btn-block btn-flat">INGRESAR</button>-->
-<!--						</div><!-- /.col -->
-<!--						<div class="col-xs-4"></div>-->
-<!--					</div>-->
-
 
 
 				</form>
+
 			</div>
 		</div><!-- /.container -->
 
