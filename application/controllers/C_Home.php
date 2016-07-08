@@ -7,7 +7,7 @@ class C_Home extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->library('session');
-
+		$this->load->model('M_Home');
 	}
 
 	public function index() {
@@ -30,6 +30,83 @@ class C_Home extends CI_Controller {
 		$this->load->view('inicio/v_register',$data);
 
 	}
+
+	public function registerIn(){
+		if(!$this->input->is_ajax_request())
+		{
+			show_404();
+		}else{
+			$this->load->library('security/Cryptography');
+			$this->load->library('utils/UploadFile');
+			$json                   = new stdClass();
+			$json->type             = "Registro";
+			$json->data             = array();
+			$json->status           = FALSE;
+
+			if ( $this->input->post("txtNombre") ) {
+
+
+				$resultado = $this->M_Intranet_Profesional->getByEmail(trim($this->input->post("txtEmail", TRUE)));
+				if(count($resultado)>0){
+					$json->message  = "Esta cuenta de Correo ya esta registrada en CHAMBING";
+				}else{
+					/* Obtener Url de la Imagen */
+//                    if ( $this->uploadfile->validateFile("txtImagen") ) {
+//                        $path = "uploads/fotoperfil/cliente/imgperfil/";
+//                        $path = $this->uploadfile->upload("txtImagen", trim($this->input->post("txtEmail", TRUE)), $path);
+//                    } else {
+//
+//
+//                    }
+//					if($this->input->post("cbSexo") == "M"){
+//						$path = base_url().PATH_RESOURCE_ADMIN."img/users/user-male.png";
+//					}else if($this->input->post("cbSexo") == "F"){
+//						$path = base_url().PATH_RESOURCE_ADMIN."img/users/user-female.png";
+//					}
+//
+//					/* Registrar Datos */
+//					$result = $this->M_Intranet_Cliente->insert(
+//						array(
+//							"nombre_cliente"            => trim($this->input->post("txtNombre", TRUE)),
+//							"apellido_cliente"          => trim($this->input->post("txtApellidos", TRUE)),
+//							"fechanac_cliente"          => trim($this->input->post("txtFechaNac", TRUE)),
+//							"tipodoc_cliente"           => trim($this->input->post("cbDocumento", TRUE)),
+//							"numdoc_cliente"            => trim($this->input->post("txtDocumento", TRUE)),
+//							"fijo_cliente"              => trim($this->input->post("txtTelefono", TRUE)),
+//							"movil_cliente"             => trim($this->input->post("txtCelular", TRUE)),
+//							"sexo_cliente"              => trim($this->input->post("cbSexo", TRUE)),
+//							"email_cliente"             => trim($this->input->post("txtEmail", TRUE)),
+//							"pass_cliente"              => $this->cryptography->Encrypt(trim($this->input->post("txtPassword", TRUE))),
+//							"idOficio"                  => trim($this->input->post("cbOficio", TRUE)),
+//							"idDepartamento"            => trim($this->input->post("cbDepartamento", TRUE)),
+//							"idProvincia"               => trim($this->input->post("cbProvincia", TRUE)),
+//							"idDistrito"                => trim($this->input->post("cbDistrito", TRUE)),
+//							"direccion_cliente"         => trim($this->input->post("txtDireccion", TRUE)),
+//							"imagen_cliente"            => $path
+//
+//						)
+//					);
+//					if(count($result)>0){
+//						$link = $this->generarLinkTemporal($result, trim($this->input->post("txtEmail", TRUE)));
+//						$this->enviarEmail(trim($this->input->post("txtEmail", TRUE)), $link);
+//						$json->message = "Agregado correctamente.";
+//						$json->status = TRUE;
+//					}else{
+//						$json->message = "No se Agrego correctamente.";
+//					}
+					$json->status = TRUE;
+				}
+
+
+
+			} else {
+				$json->message  = "No se recibio los parametros necesarios para procesar su solicitud.";
+			}
+			header('Content-type: application/json; charset=utf-8');
+			echo json_encode($json);
+		}
+	}
+
 
 	public function facebook() {
 
