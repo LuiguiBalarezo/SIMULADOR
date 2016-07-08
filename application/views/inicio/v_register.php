@@ -181,16 +181,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					</div>
 					<div class="form-group">
-						<label class="control-label"></label>
-						<div class="">
-							<button type="submit" class="btn btn-primary" >Send </button>
+						<div class="col-xs-1"></div>
+						<div class="col-xs-4">
+							<label class="control-label"></label>
+							<div class="">
+								<button type="submit" class="btn btn-primary" >Send </button>
+							</div>
 						</div>
 					</div>
 <!--					<div class="row">-->
 <!--						<div class="col-xs-4"></div>-->
 <!--						<div class="col-xs-4">-->
 <!--							<button type="submit" id="btnRegister" class="btn btn-primary btn-block btn-flat">INGRESAR</button>-->
-<!--						</div><!-- /.col -->-->
+<!--						</div><!-- /.col -->
 <!--						<div class="col-xs-4"></div>-->
 <!--					</div>-->
 
