@@ -157,7 +157,7 @@ class C_Home extends CI_Controller {
 
 	public function signIn() {
 		$this->load->helper('security');
-		$this->load->model('admin/M_Admin_Login');
+
 		$this->load->library('security/Cryptography');
 
 		$json 				= new stdClass();
@@ -169,7 +169,7 @@ class C_Home extends CI_Controller {
 
 		if ($this->input->post("txtEmail") && $this->input->post("txtPassword")) {
 
-			$result = $this->M_Admin_Login->signIn(trim($this->input->post("txtEmail", TRUE)));
+			$result = $this->M_Home->signIn(trim($this->input->post("txtEmail", TRUE)));
 			if (sizeof($result) > 0 ) {
 				$Usuario = $result[0];
 				if ($this->cryptography->validateHash($Usuario->password, trim($this->input->post("txtPassword", TRUE)))) {
