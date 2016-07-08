@@ -198,7 +198,7 @@ $(document).ready(function(){
             }
         })
         .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+
             $('#registerForm').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
@@ -211,7 +211,7 @@ $(document).ready(function(){
             var bv = $form.data('bootstrapValidator');
 
             // Use Ajax to submit form data
-            $.post($form.attr('action'), $form.serialize(),'registerIn', function(result) {
+            $.post('registerIn', $form.serialize(), function(result) {
                 console.log(result);
             }, 'json');
         });
