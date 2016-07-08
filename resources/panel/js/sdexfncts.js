@@ -204,6 +204,7 @@ $(document).ready(function(){
 
         // Prevent form submission
         e.preventDefault();
+        e.stopPropagation();
         return false;
 
         //// Get the form instance
