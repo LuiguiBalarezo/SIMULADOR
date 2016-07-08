@@ -49,32 +49,7 @@ $(document).ready(function(){
     });
 
 
-    $("#btnRegister").on("click", function(evt){
-        evt.preventDefault();
 
-        $.LoadingOverlay("show");
-        var request = $.ajax({
-            url: base_url+'registerIn',
-            type: "post",
-            data: $("#RegisterForm").serialize(),
-            dataType: 'json'
-        });
-
-        request.done(function( response ) {
-            $.LoadingOverlay("hide");
-            if (response.status) {
-                $(location).attr("href", response.data.url_redirect);
-            } else {
-                swal("Error", response.message, "error");
-            }
-        });
-        request.fail(function( jqXHR, textStatus ) {
-            $.LoadingOverlay("hide");
-            swal("Error", textStatus, "error");
-
-        });
-
-    });
 
     $('input').iCheck({
         checkboxClass: 'icheckbox_square-blue',
@@ -83,7 +58,7 @@ $(document).ready(function(){
     });
 
 
-    $('#contact_form').bootstrapValidator({
+    $('#registerForm').bootstrapValidator({
             // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
             feedbackIcons: {
                 valid: 'glyphicon glyphicon-ok',
@@ -166,7 +141,7 @@ $(document).ready(function(){
                 txtTelefono: {
                     validators: {
                         notEmpty: {
-                            message: 'Porfavor ingrese su numero de telefono'
+                            message: 'Porfavor ingrese su numero de telefono o celular'
                         },
                         stringLength: {
                             min: 6,
@@ -199,7 +174,7 @@ $(document).ready(function(){
         })
         .on('success.form.bv', function(e) {
             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-            $('#contact_form').data('bootstrapValidator').resetForm();
+            $('#registerForm').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
             e.preventDefault();
@@ -211,9 +186,27 @@ $(document).ready(function(){
             var bv = $form.data('bootstrapValidator');
 
             // Use Ajax to submit form data
-            $.post($form.attr('action'), $form.serialize(), function(result) {
-                console.log(result);
-            }, 'json');
+            $.LoadingOverlay("show");
+            var request = $.ajax({
+                url: base_url+'registerIn',
+                type: "post",
+                data: $("#registerForm").serialize(),
+                dataType: 'json'
+            });
+
+            request.done(function( response ) {
+                $.LoadingOverlay("hide");
+                if (response.status) {
+                    $(location).attr("href", response.data.url_redirect);
+                } else {
+                    swal("Error", response.message, "error");
+                }
+            });
+            request.fail(function( jqXHR, textStatus ) {
+                $.LoadingOverlay("hide");
+                swal("Error", textStatus, "error");
+
+            });
         });
 
 
