@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/square/blue.css">
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
 
     <![endif]-->
 </head>
@@ -64,22 +64,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="form-group has-feedback">
 
 								<select id="cbDepartamento" required="" class="form-control st">
-									<option selected value="">- Departamento -</option>
+									<option selected value="">DEPARTAMENTO</option>
 									<?php foreach($modulo->departamento as $departamento): ?>
 										<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
 									<?php endforeach; ?>
 
 								</select>
-								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
+
 							</div>
 
 							<div class="form-group has-feedback">
 								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
-								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
+
 							</div>
 							<div class="form-group has-feedback">
 								<input type="text" name="txtDistrito" id="txtDistrito" class="form-control" placeholder="DISTRITO">
-								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
+
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
@@ -112,6 +112,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 				</div>
+				<!-- Success message -->
+				<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
 				<div class="row">
 					<div class="col-xs-4"></div>
 					<div class="col-xs-4">
