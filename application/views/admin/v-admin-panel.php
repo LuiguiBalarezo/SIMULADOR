@@ -1,5 +1,5 @@
 <?php $this->load->view('template/main-panel/main-head', $modulo); ?>
-<body class="hold-transition skin-black sidebar-mini fix-padding-scrollbar">
+<body class="hold-transition bg-black sidebar-mini fix-padding-scrollbar">
 <div class="wrapper">
 
   <?php
@@ -33,7 +33,7 @@
                 ESTUDIO</h4></p>
             </div>
 
-            <a href="panel/c" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="panel/estudio" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
