@@ -71,13 +71,13 @@ $route['admin/signOut']			= 'C_Home/signOut';
 
 $route['panel']                    = 'panel/C_panel';
 $route['panel/perfil']             = 'panel/C_panel/perfil';
-$route['panel/estudio/']           = 'panel/C_panel/estudio';
-$route['panel/cienpreguntas/']     = 'panel/C_panel/cienpreguntas';
-$route['panel/completo/']          = 'panel/C_panel/completo';
-$route['panel/bibliografia/']      = 'panel/C_panel/bibliografia';
-$route['panel/manual/']            = 'panel/C_panel/manual';
-$route['panel/soporte/']           = 'panel/C_panel/soporte';
-$route['panel/licencia/']          = 'panel/C_panel/licencia';
+$route['panel/estudio']           = 'panel/C_panel/estudio';
+$route['panel/cienpreguntas']     = 'panel/C_panel/cienpreguntas';
+$route['panel/completo']          = 'panel/C_panel/completo';
+$route['panel/bibliografia']      = 'panel/C_panel/bibliografia';
+$route['panel/manual']            = 'panel/C_panel/manual';
+$route['panel/soporte']           = 'panel/C_panel/soporte';
+$route['panel/licencia']          = 'panel/C_panel/licencia';
 
 
 /*
