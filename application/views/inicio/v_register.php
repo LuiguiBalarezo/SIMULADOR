@@ -120,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-										<input name="txtDireccion" placeholder="txtDireccion" class="form-control" type="text">
+										<input name="txtDireccion" placeholder="DIRECCION" class="form-control" type="text">
 									</div>
 								</div>
 							</div>

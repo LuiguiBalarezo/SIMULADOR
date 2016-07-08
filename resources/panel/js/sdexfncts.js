@@ -160,7 +160,7 @@ $(document).ready(function(){
                         integer: {
                             message: 'El valor ingresado no es un entero'
                         },
-                        numberLength: {
+                        stringLength: {
                             min: 8,
                         },
                     }
