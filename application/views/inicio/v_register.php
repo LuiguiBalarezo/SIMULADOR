@@ -48,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<div class="container">
 
-				<form class="" action="registerIn" method="post"  id="registerForm">
+				<form class="" action="" method="post"  id="registerForm">
 					<div class="row">
 						<div class="col-md-3 col-xs-12">
 							<div class="form-group">
