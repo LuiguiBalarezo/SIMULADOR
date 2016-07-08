@@ -11,10 +11,20 @@ class C_Panel extends CI_Controller {
 	}
 
 	public function index() {
-		$this->load->view('admin/cliente/v-admin-panel');
+		$modulo                     = new stdClass();
+		$modulo->nombres_usuario       = "";
+		$modulo->tipo_usuario       = "";
+		$data["modulo"] = $modulo;
+		$this->load->view('admin/cliente/v-admin-panel',$data);
 	}
 	public function perfil(){
-		$this->load->view('admin/cliente/v-cliente-perfil');
+		$modulo                     = new stdClass();
+		$modulo->nombres_usuario       = "";
+
+		
+		$modulo->tipo_usuario       = "";
+		$data["modulo"] = $modulo;
+		$this->load->view('admin/cliente/v-cliente-perfil',$data);
 
 	}
 	public function estudio(){
