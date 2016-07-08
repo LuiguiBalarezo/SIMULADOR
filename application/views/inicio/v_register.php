@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="row">
 						<div class="col-md-3 col-xs-12">
 							<div class="form-group">
-								<label class="">Nombres</label>
+<!--								<label class="">Nombres</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label" >Apellido Paterno</label>
+<!--								<label class="control-label" >Apellido Paterno</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label" >Apellido Materno</label>
+<!--								<label class="control-label" >Apellido Materno</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label" >Departamento</label>
+<!--								<label class="control-label" >Departamento</label>-->
 								<div class="selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
@@ -93,7 +93,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label" >Provincia</label>
+<!--								<label class="control-label" >Provincia</label>-->
 								<div class="selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label" >Distrito</label>
+<!--								<label class="control-label" >Distrito</label>-->
 								<div class="selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
@@ -116,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 							</div>
 							<div class="form-group">
-								<label class=" control-label">Dirección</label>
+<!--								<label class=" control-label">Dirección</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
@@ -130,7 +130,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<div class="col-md-3 col-xs-12">
 							<div class="form-group">
-								<label class=" control-label">DNI</label>
+<!--								<label class=" control-label">DNI</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
@@ -139,7 +139,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 							<div class="form-group">
-								<label class=" control-label">Teléfono</label>
+<!--								<label class=" control-label">Teléfono</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
@@ -149,7 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 
 							<div class="form-group">
-								<label class=" control-label">Correo Electrónico</label>
+<!--								<label class=" control-label">Correo Electrónico</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 
 							<div class="form-group">
-								<label class=" control-label">Contraseña</label>
+<!--								<label class=" control-label">Contraseña</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
@@ -167,7 +167,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</div>
 								</div>
 							</div>
-
+							<div class="form-group has-feedback" style="text-align: center">
+								<label style="margin-top: 8px;">FECHA DE REGISTRO 07/07/2016</label>
+							</div>
+							<div class="checkbox icheck">
+								<label style="margin-top: 6px">
+									<input name="ckTerminos" id="ckTerminos" type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
+								</label>
+							</div>
 
 
 						</div>
