@@ -1,5 +1,5 @@
 <?php $this->load->view('template/main-panel/main-head', $modulo); ?>
-<body class="hold-transition bg-gray sidebar-mini fix-padding-scrollbar">
+<body class="hold-transition skin-black sidebar-mini fix-padding-scrollbar">
 <div class="wrapper">
 
   <?php
