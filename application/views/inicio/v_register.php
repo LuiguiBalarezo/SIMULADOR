@@ -49,10 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="container">
 
 				<form class="well form-horizontal" action=" " method="post"  id="contact_form">
-					<fieldset>
 
-						<!-- Form Name -->
-						<legend>Contact Us Today!</legend>
 
 						<!-- Text input-->
 
@@ -254,7 +251,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 
-					</fieldset>
+
 				</form>
 			</div>
 		</div><!-- /.container -->
