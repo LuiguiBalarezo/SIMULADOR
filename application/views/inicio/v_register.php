@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select name="cbDepartamento" class="form-control selectpicker" >
+										<select name="cbDepartamento" id="cbDepartamento" class="form-control selectpicker" >
 											<option selected value="">DEPARTAMENTO</option>
 											<?php foreach($modulo->departamento as $departamento): ?>
 												<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
@@ -97,7 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select name="cbProvincia" class="form-control selectpicker" >
+										<select name="cbProvincia" id="cbProvincia" class="form-control selectpicker" >
 											<option selected value="">PROVINCIA</option>
 										</select>
 									</div>
@@ -108,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="selectContainer">
 									<div class="input-group">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-										<select name="cbDistrito" class="form-control selectpicker" >
+										<select name="cbDistrito" id="cbDistrito" class="form-control selectpicker" >
 											<option selected value="">DISTRITO</option>
 										</select>
 									</div>
