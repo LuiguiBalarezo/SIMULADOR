@@ -1,5 +1,5 @@
 <?php $this->load->view('template/main-panel/main-head', $modulo); ?>
-<body class="hold-transition bg-black sidebar-mini fix-padding-scrollbar">
+<body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
 <div class="wrapper">
 
     <?php
