@@ -203,7 +203,8 @@ $(document).ready(function(){
             //$('#contact_form').data('bootstrapValidator').resetForm();
 
         // Prevent form submission
-        e.stopImmediatePropagation();
+        e.preventDefault();
+        return false;
 
         //// Get the form instance
         //var $form = $(e.target);
