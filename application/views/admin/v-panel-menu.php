@@ -38,7 +38,7 @@
 
 			<li <?php echo ($menu == 4) ? 'class="active"' : ''; ?>>
 				<a href="panel/completo">
-					<i class="fa fa-circle-o"></i> <span>SIMULADOR DE EXAMEN (COMPLETO)</span>
+					<i class="fa fa-circle-o"></i> <span>SIMULADOR DE EXAMEN</span>
 				</a>
 
 			</li>
