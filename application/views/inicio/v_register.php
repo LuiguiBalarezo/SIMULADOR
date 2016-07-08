@@ -76,12 +76,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 
 							<div class="form-group has-feedback">
-								<select name="cbProvincia" required="" class="form-control st">
+								<select name="cbProvincia" id="cbProvincia" required="" class="form-control st">
 									<option selected value="">PROVINCIA</option>
 								</select>
 							</div>
 							<div class="form-group has-feedback">
-								<select name="cbDistrito" required="" class="form-control st">
+								<select name="cbDistrito" id="cbDistrito" required="" class="form-control st">
 									<option selected value="">DISTRITO</option>
 								</select>
 							</div>
