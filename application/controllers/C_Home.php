@@ -42,7 +42,7 @@ class C_Home extends CI_Controller {
 			$json->type             = "Registro";
 			$json->data             = array();
 			$json->status           = FALSE;
-
+			var_dump( $this->input->post());
 			if ( $this->input->post("txtNombre") && $this->input->post("txtApellidoP") && $this->input->post("txtApellidM") && $this->input->post("cbDepartamento")) {
 
 

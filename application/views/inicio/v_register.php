@@ -111,7 +111,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<label style="margin-top: 8px;">FECHA DE REGISTRO 07/07/2016</label>
 							</div>
 							<div class="checkbox icheck">
-								<label style="margin-top: 6px">
+								<label style="margin-top: 45px">
 									<input name="ckTerminos" id="ckTerminos" type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
 								</label>
 							</div>
