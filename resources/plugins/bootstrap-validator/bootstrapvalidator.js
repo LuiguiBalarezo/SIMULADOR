@@ -52,7 +52,7 @@
         elementClass: 'bv-form',
 
         // Default invalid message
-        message: 'This value is not valid',
+        message: 'Este valor no es válido',
 
         // The field will not be live validated if its length is less than this number of characters
         threshold: null,
