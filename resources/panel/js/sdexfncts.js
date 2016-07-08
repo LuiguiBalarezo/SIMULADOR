@@ -198,12 +198,13 @@ $(document).ready(function(){
             }
         })
         .on('success.form.bv', function(e) {
-
+            // Prevent form submission
+            e.preventDefault();
             //$('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
             $('#registerForm').data('bootstrapValidator').resetForm();
 
-            // Prevent form submission
-            e.preventDefault();
+            return false;
+
 
             // Get the form instance
             var $form = $(e.target);
