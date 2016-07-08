@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					<div class="row">
 						<!-- Text input-->
-						<div class="col-md-6 col-xs-12">
+						<div class="col-md-3 col-xs-12">
 							<div class="form-group">
 								<label class="">First Name</label>
 								<div class=" inputGroupContainer">
@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 						<!-- Text input-->
-						<div class="col-md-6 col-xs-12">
+						<div class="col-md-3 col-xs-12">
 							<div class="form-group">
 								<label class=" control-label">Phone #</label>
 								<div class=" inputGroupContainer">
