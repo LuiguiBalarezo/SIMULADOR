@@ -57,8 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<label class="">First Name</label>
 								<div class=" inputGroupContainer">
 									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 										<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 									</div>
 								</div>
 							</div>
