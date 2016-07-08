@@ -62,21 +62,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="form-group has-feedback">
 								<input type="text" name="txtDepartamento" id="txtDepartamento" class="form-control" placeholder="DEPARTAMENTO">
-								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
 								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
-								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
 								<input type="text" name="txtDistrito" id="txtDistrito" class="form-control" placeholder="DISTRITO">
-								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+								<span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
 							<div class="form-group has-feedback">
 								<input type="email" name="txtDni" id="txtDni" class="form-control" placeholder="DNI">
-								<span class="glyphicon glyphicon-book form-control-feedback"></span>
+								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
 								<input type="email" name="txtTelefono" id="txtTelefono" class="form-control" placeholder="TELEFONO">
