@@ -172,7 +172,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="checkbox icheck">
 								<label style="margin-top: 6px">
-									<input name="ckTerminos" id="ckTerminos" type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
+									<input name="ckTerminos" id="ckTerminos" type="checkbox"><div style="margin-left: 30px;margin-top: -23px"> Estoy de acuerdo con los <a>Términos y condiciones</a></div>
 								</label>
 							</div>
 
