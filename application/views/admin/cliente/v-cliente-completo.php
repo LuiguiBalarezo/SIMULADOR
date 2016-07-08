@@ -1,15 +1,14 @@
-<?php $this->load->view('template/main-panel/main-head', $modulo); ?>
+<?php $this->load->view('template/main-panel/main-head'); ?>
 <body class="hold-transition bg-black sidebar-mini fix-padding-scrollbar">
 <div class="wrapper">
 
     <?php
-    $data["modulo"] = $modulo;
-    $this->load->view('template/main-panel/header', $data); ?>
+
+    $this->load->view('template/main-panel/header'); ?>
 
     <?php
-    $data["menu"]     = 0;
-    $data["submenu"]  = 0;
-    $this->load->view('admin/v-panel-menu', $data); ?>
+
+    $this->load->view('admin/v-panel-menu'); ?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
