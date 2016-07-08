@@ -43,47 +43,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              
 		</div><!-- /.login-logo -->
 		<div class="login-box-body">
-			<p class="login-box-msg">INICIAR SESION</p>
-			<form id="Form"  method="post">
+			<p class="login-box-msg">REGISTRARSE</p>
+			<form id="RegisterForm"  method="post">
 				<div class="row">
 
 						<div class="col-md-6 col-xs-12">
 							<div class="form-group has-feedback">
 								<input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="NOMBRES">
-								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="APELLIDO PATERNO">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								<input type="text" name="txtApellidoP" id="txtApellidoP" class="form-control" placeholder="APELLIDO PATERNO">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="APELLIDO MATERNO">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								<input type="text" name="txtApellidMo" id="txtApellidoM" class="form-control" placeholder="APELLIDO MATERNO">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="DEPARTAMENTO">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								<input type="text" name="txtDepartamento" id="txtDepartamento" class="form-control" placeholder="DEPARTAMENTO">
+								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="PROVINCIA">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
+								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="DISTRITO">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+								<input type="text" name="txtDistrito" id="txtDistrito" class="form-control" placeholder="DISTRITO">
+								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
 							<div class="form-group has-feedback">
-								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="DNI">
-								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+								<input type="email" name="txtDni" id="txtDni" class="form-control" placeholder="DNI">
+								<span class="glyphicon glyphicon-book form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="TELEFONO">
-								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+								<input type="email" name="txtTelefono" id="txtTelefono" class="form-control" placeholder="TELEFONO">
+								<span class="glyphicon glyphicon-phone form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="CORREO ELECTRONICO">
+								<input type="email" name="txtCorreo" id="txtCorreo" class="form-control" placeholder="CORREO ELECTRONICO">
 								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="checkbox icheck">
 								<label style="margin-top: 6px">
-									<input type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
+									<input name="ckTerminos" id="ckTerminos" type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
 								</label>
 							</div>
 
@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="row">
 					<div class="col-xs-4"></div>
 					<div class="col-xs-4">
-						<button type="submit" id="btnSignIn" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
+						<button type="submit" id="btnRegister" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
 					</div><!-- /.col -->
 					<div class="col-xs-4"></div>
 				</div>
@@ -129,15 +129,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script>
             
         $(function () {
-			$("#btnSignIn").on("click", function(evt){
+			$("#btnRegister").on("click", function(evt){
 				evt.preventDefault();
 				//$(location).attr("href", "<?php echo base_url().'admin'; ?>");
-				if ( $("#txtEmail").val().length > 0 && $("#txtPassword").val().length > 0 ) {
+				if ( $("#RegisterForm").val().length > 0 && $("#txtPassword").val().length > 0 ) {
 					$.LoadingOverlay("show");
 					var request = $.ajax({
 						url: "<?php echo base_url().'signIn'; ?>",
 						type: "post",
-						data: $("#Form").serialize(),
+						data: $("#RegisterForm").serialize(),
 						dataType: 'json'
 					});
 

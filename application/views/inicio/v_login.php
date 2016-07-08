@@ -70,8 +70,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			</div><!-- /.social-auth-links -->
 
-			<a href="#">Olvide mi Contraseña</a><br>
-			<a href="register.html" class="text-center">Registrate como miembro</a>
+			<a href="#">¿Olvidaste tu Contraseña?</a><br>
+			<a href="register" class="text-center">Registrate como miembro</a>
 
 		</div><!-- /.login-box-body -->
 
