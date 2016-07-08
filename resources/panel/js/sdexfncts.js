@@ -83,7 +83,7 @@ $(document).ready(function(){
     });
 
 
-    $('#RegisterForm').bootstrapValidator({
+    $('#contact_form').bootstrapValidator({
             // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
             feedbackIcons: {
                 valid: 'glyphicon glyphicon-ok',
@@ -91,7 +91,7 @@ $(document).ready(function(){
                 validating: 'glyphicon glyphicon-refresh'
             },
             fields: {
-                txtNombre: {
+                first_name: {
                     validators: {
                         stringLength: {
                             min: 2,
@@ -111,7 +111,7 @@ $(document).ready(function(){
                         }
                     }
                 },
-                txtCorreo: {
+                email: {
                     validators: {
                         notEmpty: {
                             message: 'Please supply your email address'
@@ -186,7 +186,7 @@ $(document).ready(function(){
         })
         .on('success.form.bv', function(e) {
             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-            $('#RegisterForm').data('bootstrapValidator').resetForm();
+            $('#contact_form').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
             e.preventDefault();
@@ -198,9 +198,9 @@ $(document).ready(function(){
             var bv = $form.data('bootstrapValidator');
 
             // Use Ajax to submit form data
-            //$.post($form.attr('action'), $form.serialize(), function(result) {
-            //    console.log(result);
-            //}, 'json');
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
         });
 
 

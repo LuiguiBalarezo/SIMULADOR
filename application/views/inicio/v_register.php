@@ -45,92 +45,219 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div><!-- /.login-logo -->
 		<div class="login-box-body">
 			<p class="login-box-msg">REGISTRARSE</p>
-			<form id="RegisterForm"  method="post">
-				<div class="row">
 
-						<div class="col-md-6 col-xs-12">
-							<div class="form-group has-feedback">
-								<input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="NOMBRES">
-								<span class="glyphicon glyphicon-user form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" name="txtApellidoP" id="txtApellidoP" class="form-control" placeholder="APELLIDO PATERNO">
-								<span class="glyphicon glyphicon-user form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" name="txtApellidMo" id="txtApellidoM" class="form-control" placeholder="APELLIDO MATERNO">
-								<span class="glyphicon glyphicon-user form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback">
+			<div class="container">
 
-								<select id="cbDepartamento" required="" class="form-control st">
-									<option selected value="">DEPARTAMENTO</option>
-									<?php foreach($modulo->departamento as $departamento): ?>
-										<option value="<?php echo $departamento->idDepartamento;?>"> <?php echo $departamento->nom_departamento; ?></option>
-									<?php endforeach; ?>
+				<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+					<fieldset>
 
-								</select>
+						<!-- Form Name -->
+						<legend>Contact Us Today!</legend>
 
-							</div>
+						<!-- Text input-->
 
-							<div class="form-group has-feedback">
-								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
-
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" name="txtDistrito" id="txtDistrito" class="form-control" placeholder="DISTRITO">
-
+						<div class="form-group">
+							<label class="col-md-4 control-label">First Name</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xs-12">
-							<div class="form-group has-feedback">
-								<input type="email" name="txtDni" id="txtDni" class="form-control" placeholder="DNI">
-								<span class="glyphicon glyphicon-pencil form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="email" name="txtTelefono" id="txtTelefono" class="form-control" placeholder="TELEFONO">
-								<span class="glyphicon glyphicon-phone form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="email" name="txtCorreo" id="txtCorreo" class="form-control" placeholder="CORREO ELECTRONICO">
-								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="password" name="txtPassword" id="txtPassword" class="form-control" placeholder="CONTRASEÑA">
-								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
-							</div>
-							<div class="form-group has-feedback" style="text-align: center">
-								<label style="margin-top: 8px;">FECHA DE REGISTRO 07/07/2016</label>
-							</div>
-							<div class="checkbox icheck">
-								<label style="margin-top: 6px">
-									<input name="ckTerminos" id="ckTerminos" type="checkbox"> Estoy de acuerdo con los <a>Términos y condiciones</a>
-								</label>
-							</div>
 
+						<!-- Text input-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label" >Last Name</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+								</div>
+							</div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label">E-Mail</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+									<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+								</div>
+							</div>
 						</div>
 
 
-				</div>
-				<!-- Success message -->
-<!--				<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>-->
+						<!-- Text input-->
 
-				<div class="row">
-					<div class="col-xs-4"></div>
-					<div class="col-xs-4">
-						<button type="submit" id="btnRegister" class="btn btn-primary btn-block btn-flat">INGRESAR</button>
-					</div><!-- /.col -->
-					<div class="col-xs-4"></div>
-				</div>
+						<div class="form-group">
+							<label class="col-md-4 control-label">Phone #</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+									<input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+								</div>
+							</div>
+						</div>
 
+						<!-- Text input-->
 
-			</form>
+						<div class="form-group">
+							<label class="col-md-4 control-label">Address</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+									<input name="address" placeholder="Address" class="form-control" type="text">
+								</div>
+							</div>
+						</div>
 
-<!--			<div class="social-auth-links text-center">-->
-<!---->
-<!--				<a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Inicia Sesion con Facebook</a>-->
-<!---->
-<!--			</div><!-- /.social-auth-links -->
+						<!-- Text input-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">City</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+									<input name="city" placeholder="city" class="form-control"  type="text">
+								</div>
+							</div>
+						</div>
+
+						<!-- Select Basic -->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">State</label>
+							<div class="col-md-4 selectContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+									<select name="state" class="form-control selectpicker" >
+										<option value=" " >Please select your state</option>
+										<option>Alabama</option>
+										<option>Alaska</option>
+										<option >Arizona</option>
+										<option >Arkansas</option>
+										<option >California</option>
+										<option >Colorado</option>
+										<option >Connecticut</option>
+										<option >Delaware</option>
+										<option >District of Columbia</option>
+										<option> Florida</option>
+										<option >Georgia</option>
+										<option >Hawaii</option>
+										<option >daho</option>
+										<option >Illinois</option>
+										<option >Indiana</option>
+										<option >Iowa</option>
+										<option> Kansas</option>
+										<option >Kentucky</option>
+										<option >Louisiana</option>
+										<option>Maine</option>
+										<option >Maryland</option>
+										<option> Mass</option>
+										<option >Michigan</option>
+										<option >Minnesota</option>
+										<option>Mississippi</option>
+										<option>Missouri</option>
+										<option>Montana</option>
+										<option>Nebraska</option>
+										<option>Nevada</option>
+										<option>New Hampshire</option>
+										<option>New Jersey</option>
+										<option>New Mexico</option>
+										<option>New York</option>
+										<option>North Carolina</option>
+										<option>North Dakota</option>
+										<option>Ohio</option>
+										<option>Oklahoma</option>
+										<option>Oregon</option>
+										<option>Pennsylvania</option>
+										<option>Rhode Island</option>
+										<option>South Carolina</option>
+										<option>South Dakota</option>
+										<option>Tennessee</option>
+										<option>Texas</option>
+										<option> Uttah</option>
+										<option>Vermont</option>
+										<option>Virginia</option>
+										<option >Washington</option>
+										<option >West Virginia</option>
+										<option>Wisconsin</option>
+										<option >Wyoming</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<!-- Text input-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Zip Code</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+									<input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+								</div>
+							</div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label">Website or domain name</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+									<input name="website" placeholder="Website or domain name" class="form-control" type="text">
+								</div>
+							</div>
+						</div>
+
+						<!-- radio checks -->
+						<div class="form-group">
+							<label class="col-md-4 control-label">Do you have hosting?</label>
+							<div class="col-md-4">
+								<div class="radio">
+									<label>
+										<input type="radio" name="hosting" value="yes" /> Yes
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="hosting" value="no" /> No
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<!-- Text area -->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Project Description</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+									<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<!-- Success message -->
+						<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+						<!-- Button -->
+						<div class="form-group">
+							<label class="col-md-4 control-label"></label>
+							<div class="col-md-4">
+								<button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+							</div>
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+		</div><!-- /.container -->
 
 
 		</div><!-- /.login-box-body -->
