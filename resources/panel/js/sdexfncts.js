@@ -195,48 +195,54 @@ $(document).ready(function(){
                 },
 
 
+            },
+            onSuccess: function(e, data) {
+                //this section before submit
+                alert('Success');
             }
-        })
-        .on('success.form.bv', function(e) {
-            // Prevent form submission
-            e.preventDefault();
-            //$('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-            $('#registerForm').data('bootstrapValidator').resetForm();
-
-            return false;
 
 
-            // Get the form instance
-            var $form = $(e.target);
-
-            // Get the BootstrapValidator instance
-            var bv = $form.data('bootstrapValidator');
-
-            // Use Ajax to submit form data
-
-
-            // Use Ajax to submit form data
-            //$.post(base_url+"registerIn", $('#registerForm').serialize(), function(result) {
-            //    console.log(result);
-            //});
-            //var request = $.ajax({
-            //    url: base_url + "registerIn",
-            //    type: "post",
-            //    data:  $('#registerForm').serialize(),
-            //    contentType: false,
-            //    processData: false
-            //});
-            //request.done(function(response) {
-            //    if (response.status) {
-            //        swal("OK", response.message, "success");
-            //    } else {
-            //        swal("Error", response.message, "error");
-            //    }
-            //});
-            //request.fail(function( jqXHR, textStatus ) {
-            //    swal("Error", textStatus, "error");
-            //});
         });
+        //.on('success.form.bv', function(e) {
+        //    // Prevent form submission
+        //    e.preventDefault();
+        //    //$('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+        //    $('#registerForm').data('bootstrapValidator').resetForm();
+        //
+        //    return false;
+        //
+        //
+        //    // Get the form instance
+        //    var $form = $(e.target);
+        //
+        //    // Get the BootstrapValidator instance
+        //    var bv = $form.data('bootstrapValidator');
+        //
+        //    // Use Ajax to submit form data
+        //
+        //
+        //    // Use Ajax to submit form data
+        //    //$.post(base_url+"registerIn", $('#registerForm').serialize(), function(result) {
+        //    //    console.log(result);
+        //    //});
+        //    //var request = $.ajax({
+        //    //    url: base_url + "registerIn",
+        //    //    type: "post",
+        //    //    data:  $('#registerForm').serialize(),
+        //    //    contentType: false,
+        //    //    processData: false
+        //    //});
+        //    //request.done(function(response) {
+        //    //    if (response.status) {
+        //    //        swal("OK", response.message, "success");
+        //    //    } else {
+        //    //        swal("Error", response.message, "error");
+        //    //    }
+        //    //});
+        //    //request.fail(function( jqXHR, textStatus ) {
+        //    //    swal("Error", textStatus, "error");
+        //    //});
+        //});
 
 
 
