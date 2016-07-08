@@ -46,7 +46,7 @@ class C_Home extends CI_Controller {
 			if ( $this->input->post("txtNombre") ) {
 
 
-				$resultado = $this->M_Intranet_Profesional->getByEmail(trim($this->input->post("txtEmail", TRUE)));
+				$resultado = $this->M_Home->getByEmail(trim($this->input->post("txtEmail", TRUE)));
 				if(count($resultado)>0){
 					$json->message  = "Esta cuenta de Correo ya esta registrada en CHAMBING";
 				}else{
