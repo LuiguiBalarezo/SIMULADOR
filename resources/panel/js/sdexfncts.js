@@ -97,91 +97,97 @@ $(document).ready(function(){
                             min: 2,
                         },
                         notEmpty: {
-                            message: 'Please supply your first name'
+                            message: 'Porfavor ingrese su Nombre'
                         }
                     }
                 },
-                last_name: {
+                txtApellidoP: {
                     validators: {
                         stringLength: {
                             min: 2,
                         },
                         notEmpty: {
-                            message: 'Please supply your last name'
+                            message: 'Porfavor ingrese su apellido paterno'
                         }
                     }
                 },
-                email: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Please supply your email address'
-                        },
-                        emailAddress: {
-                            message: 'Please supply a valid email address'
-                        }
-                    }
-                },
-                phone: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Please supply your phone number'
-                        },
-                        phone: {
-                            country: 'US',
-                            message: 'Please supply a vaild phone number with area code'
-                        }
-                    }
-                },
-                address: {
+                txtApellidoM: {
                     validators: {
                         stringLength: {
+                            min: 2,
+                        },
+                        notEmpty: {
+                            message: 'Porfavor ingrese su apellido materno'
+                        }
+                    }
+                },
+                cbDepartamento: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Porfavor seleccione su departamento'
+                        }
+                    }
+                },
+                cbProvincia: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Porfavor seleccione su provincia'
+                        }
+                    }
+                },
+                cbDistrito: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Porfavor seleccione su distrito'
+                        }
+                    }
+                },
+                txtDireccion: {
+                    validators: {
+                        stringLength: {
+                            min: 15,
+                        },
+                        notEmpty: {
+                            message: 'Porfavor ingrese su direccion'
+                        }
+                    }
+                },
+                txtDni: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Porfavor ingrese su numero de Dni'
+                        },
+                        integer: {
+                            message: 'El valor ingresado no es un entero'
+                        },
+                        numberLength: {
                             min: 8,
                         },
-                        notEmpty: {
-                            message: 'Please supply your street address'
-                        }
                     }
                 },
-                city: {
+                txtTelefono: {
                     validators: {
-                        stringLength: {
-                            min: 4,
+                        notEmpty: {
+                            message: 'Porfavor ingrese su numero de telefono'
                         },
-                        notEmpty: {
-                            message: 'Please supply your city'
+                        phone: {
+                            country: 'PE',
+                            message: 'Porfavor ingrese un telefono valido con un codigo de area'
                         }
                     }
                 },
-                state: {
+                txtCorreo: {
                     validators: {
                         notEmpty: {
-                            message: 'Please select your state'
-                        }
-                    }
-                },
-                zip: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Please supply your zip code'
+                            message: 'Porfavor ingrese su direccion de correo electronico'
                         },
-                        zipCode: {
-                            country: 'US',
-                            message: 'Please supply a vaild zip code'
+                        emailAddress: {
+                            message: 'Porfavor ingrese una direccion de correo electronico valida'
                         }
                     }
                 },
-                comment: {
-                    validators: {
-                        stringLength: {
-                            min: 10,
-                            max: 200,
-                            message:'Please enter at least 10 characters and no more than 200'
-                        },
-                        notEmpty: {
-                            message: 'Please supply a description of your project'
-                        }
-                    }
-                }
+
+
             }
         })
         .on('success.form.bv', function(e) {
