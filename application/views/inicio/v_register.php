@@ -86,8 +86,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
+
+
 						<!-- Text input-->
 						<div class="col-md-6 col-xs-12">
 							<div class="form-group">
@@ -212,6 +212,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 						</div>
+
 					</div>
 						<!-- Success message -->
 
