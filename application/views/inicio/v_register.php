@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtApellidMo" id="txtApellidoM" class="form-control" placeholder="APELLIDO MATERNO">
+								<input type="text" name="txtApellidM" id="txtApellidoM" class="form-control" placeholder="APELLIDO MATERNO">
 								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 							<div class="form-group has-feedback">

@@ -14,6 +14,24 @@ class M_Home extends CI_Model {
         $query = $this->db->get('Usuario');
         return $query->result();
     }
+    public function registerUser($data) {
+        $data = array(
+            "usuario"               => $data["usuario"],
+            "password"              => $data["password"],
+            "email"                 => $data["email"],
+            "nombre"                => $data["nombre"],
+            "apellidop"             => $data["apellidop"],
+            "apellidom"             => $data["apellidom"]
+
+        );
+        if ($this->db->insert('Usuario', $data)) {
+            return $this->db->insert_id();
+        }else{
+            return FALSE;
+        }
+    }
+
+
 
     /*
      * LOGIN
@@ -27,6 +45,7 @@ class M_Home extends CI_Model {
         $query = $this->db->query($sql);
         return $query->result();
     }
+
 
 
 }
