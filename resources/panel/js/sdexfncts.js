@@ -183,6 +183,16 @@ $(document).ready(function(){
                         }
                     }
                 },
+                txtPassword: {
+                    validators: {
+                        stringLength: {
+                            min: 6,
+                        },
+                        notEmpty: {
+                            message: 'Porfavor ingrese su Contraseña'
+                        }
+                    }
+                },
 
 
             }
