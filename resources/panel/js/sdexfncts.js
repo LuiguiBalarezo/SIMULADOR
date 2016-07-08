@@ -192,14 +192,14 @@ $(document).ready(function(){
                             message: 'Porfavor ingrese su Contraseña'
                         }
                     }
-                },
+                }
 
 
             }
 
 
-        })
-        .on('success.form.fv', function(e) {
+        });
+        $('#registerForm').on('success.form.bv', function(e) {
             e.preventDefault();
             return false;
         });
