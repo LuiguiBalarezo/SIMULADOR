@@ -91,7 +91,7 @@ $(document).ready(function(){
                 validating: 'glyphicon glyphicon-refresh'
             },
             fields: {
-                first_name: {
+                txtNombre: {
                     validators: {
                         stringLength: {
                             min: 2,

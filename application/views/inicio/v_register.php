@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- Sweet Alert -->
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>sweetalert/sweetalert.css">
 	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>iCheck/square/blue.css">
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+	<link rel="stylesheet" href="<?php echo PATH_RESOURCE_PLUGINS; ?>bootstrap-validator/bootstrapValidator.min.css"/>
 
     <![endif]-->
 </head>
@@ -57,8 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<label class="">First Name</label>
 								<div class=" inputGroupContainer">
 									<div class="input-group">
-										<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
 										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input id="txtNombre"  name="txtNombre" placeholder="NOMBRES" class="form-control"  type="text">
 									</div>
 								</div>
 							</div>
