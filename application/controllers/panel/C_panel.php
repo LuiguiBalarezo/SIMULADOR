@@ -14,6 +14,7 @@ class C_Panel extends CI_Controller {
 		$modulo                     = new stdClass();
 		$modulo->nombres_usuario       = "";
 		$modulo->tipo_usuario       = "";
+		
 		$data["modulo"] = $modulo;
 		$this->load->view('admin/cliente/v-admin-panel',$data);
 	}
@@ -55,6 +56,5 @@ class C_Panel extends CI_Controller {
 		$this->load->view('admin/cliente/v-cliente-licencia');
 
 	}
-
 
 }
