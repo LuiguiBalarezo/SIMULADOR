@@ -198,11 +198,16 @@ $(document).ready(function(){
             }
 
 
-        });
-        $('#registerForm').on('success.form.bv', function(e) {
-            e.preventDefault();
-            return false;
-        });
+        }).on('success.form.fv', callAjax.bind(null, $(this)) );
+
+        function callAjax(form)
+        {
+            alert("hola");
+        }
+        //$('#registerForm').on('success.form.bv', function(e) {
+        //    e.preventDefault();
+        //    return false;
+        //});
         //.on('success.form.bv', function(e) {
         //    // Prevent form submission
         //    e.preventDefault();
