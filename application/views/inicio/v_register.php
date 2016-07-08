@@ -76,12 +76,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 
 							<div class="form-group has-feedback">
-								<input type="text" name="txtProvincia" id="txtProvincia" class="form-control" placeholder="PROVINCIA">
-
+								<select id="cbProvincia" required="" class="form-control st">
+									<option selected value="">PROVINCIA</option>
+								</select>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="text" name="txtDistrito" id="txtDistrito" class="form-control" placeholder="DISTRITO">
-
+								<select id="cbDistrito" required="" class="form-control st">
+									<option selected value="">DISTRITO</option>
+								</select>
+							</div>
+							<div class="form-group has-feedback">
+								<input type="text" name="txtDireccion" id="txtDireccion" class="form-control" placeholder="DIRECCION">
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
 							</div>
 						</div>
 						<div class="col-md-3 col-xs-12">

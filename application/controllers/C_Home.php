@@ -54,12 +54,15 @@ class C_Home extends CI_Controller {
 					/* Registrar Datos */
 					$result = $this->M_Home->registerUser(
 						array(
-							"usuario"            => trim($this->input->post("txtNombre", TRUE)),
-							"password"          => trim($this->input->post("txtApellidos", TRUE)),
-							"email"          => trim($this->input->post("txtFechaNac", TRUE)),
-							"nombre"           => trim($this->input->post("txtNombre", TRUE)),
-							"apellidop"            => trim($this->input->post("txtApellidoP", TRUE)),
-							"apellidom"            => trim($this->input->post("txtApellidoM", TRUE))
+							"password"          	=> trim($this->input->post("txtPassword", TRUE)),
+							"email"          		=> trim($this->input->post("txtCorreo", TRUE)),
+							"nombre"           		=> trim($this->input->post("txtNombre", TRUE)),
+							"apellidop"            	=> trim($this->input->post("txtApellidoP", TRUE)),
+							"apellidom"            	=> trim($this->input->post("txtApellidM", TRUE)),
+							"dni"            		=> trim($this->input->post("txtDni", TRUE)),
+							"telefono"            	=> trim($this->input->post("txtTelefono", TRUE)),
+							"idDistrito"            => trim($this->input->post("cbDistrito", TRUE)),
+							"direccion"            	=> trim($this->input->post("txtDireccion", TRUE))
 						)
 					);
 					if(count($result)>0){

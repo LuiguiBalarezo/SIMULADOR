@@ -21,7 +21,11 @@ class M_Home extends CI_Model {
             "email"                 => $data["email"],
             "nombre"                => $data["nombre"],
             "apellidop"             => $data["apellidop"],
-            "apellidom"             => $data["apellidom"]
+            "apellidom"             => $data["apellidom"],
+            "dni"                   => $data["dni"],
+            "telefono"              => $data["telefono"],
+            "idDistrito"            => $data["idDistrito"],
+            "direccion"             => $data["direccion"]
 
         );
         if ($this->db->insert('Usuario', $data)) {
