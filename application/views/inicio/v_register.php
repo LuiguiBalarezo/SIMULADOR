@@ -162,8 +162,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--								<label class=" control-label">Contraseña</label>-->
 								<div class=" inputGroupContainer">
 									<div class="input-group">
-										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-										<input name="txtPassword" placeholder="CONTRASEÑA" class="form-control"  type="text">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+										<input name="txtPassword" placeholder="CONTRASEÑA" class="form-control"  type="password">
 									</div>
 								</div>
 							</div>
